@@ -214,24 +214,34 @@ const popupData = {
         content: `
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-question">what software do you use?<span class="faq-arrow">▾</span></button>
-                <div class="faq-answer">visual studio code, webhook.org and various different free copy emote websites.</div>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">what software do you use?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                    <ul style="margin:0; padding-left:1.2em;"><li>visual studio code, webhook.org and various different free copy emote websites.</li></ul>
+                </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question">do you do commissions?<span class="faq-arrow">▾</span></button>
-                <div class="faq-answer">I do <b>not</b>!</div>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">do you do commissions?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                    <ul style="margin:0; padding-left:1.2em;"><li>I do <b>not</b>!</li></ul>
+                </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question">what's your setup?<span class="faq-arrow">▾</span></button>
-                <div class="faq-answer">I use a razer huntsman mini, razer deathadder v2 wireless and a logitech g435 wireless headset</div>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">what's your setup?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                    <ul style="margin:0; padding-left:1.2em;"><li>I use a razer huntsman mini, razer deathadder v2 wireless and a logitech g435 wireless headset</li></ul>
+                </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question">are you currently moderating any server?<span class="faq-arrow">▾</span></button>
-                <div class="faq-answer">I am not, but I would like to manage/moderate again.</div>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">are you currently moderating any server?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                    <ul style="margin:0; padding-left:1.2em;"><li>I am not, but I would like to manage/moderate again.</li></ul>
+                </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question">can i ask you questons about discord?<span class="faq-arrow">▾</span></button>
-                <div class="faq-answer">definitely, i love to talk about discord!</div>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">can i ask you questons about discord?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                    <ul style="margin:0; padding-left:1.2em;"><li>definitely, i love to talk about discord!</li></ul>
+                </div>
             </div>
         </div>
         `
