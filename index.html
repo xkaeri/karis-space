@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kari's space!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-decor">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="sparkle sparkle1"></div>
+        <div class="sparkle sparkle2"></div>
+        <div class="cute-bg-shape cute-bg-shape1"></div>
+        <div class="cute-bg-shape cute-bg-shape2"></div>
+        <div class="cute-bg-shape cute-bg-shape3"></div>
+        <div class="cute-bg-shape cute-bg-shape4"></div>
+    </div>
+    <header>
+        <button id="toggle-theme" title="Toggle light/dark mode">🌞</button>
+        <button id="toggle-mute" title="Mute/unmute sound">🔈</button>
+        <img src="assets/star.svg" alt="star" class="star-icon bounce">
+    </header>
+    <main>
+        <div class="card cute-shadow">
+            <nav class="navbar">home</nav>
+            <section class="intro">
+                <h1>hi! <span class="highlight">i’m kari</span></h1>
+                <p class="subtitle">moderator, admin, student</p>
+                <div class="nav-icons">
+                    <a href="#about"><img src="assets/about.svg" alt="about"><span>about</span></a>
+                    <a href="#links"><img src="assets/links.svg" alt="links"><span>links</span></a>
+                    <a href="#work"><img src="assets/work.svg" alt="work"><span>work</span></a>
+                    <a href="#faq"><img src="assets/faq.svg" alt="faq"><span>faq</span></a>
+                    <a href="#contact"><img src="assets/contact.svg" alt="contact"><span>contact</span></a>
+                </div>
+            </section>
+        </div>
+        <img src="assets/frog.svg" alt="frog" class="frog-icon bounce">
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="#"><img src="assets/twitter1.svg" alt="twitter"></a>
+            <a href="#"><img src="assets/youtube2.svg" alt="youtube"></a>
+            <a href="#"><img src="assets/insta.svg" alt="instagram"></a>
+        </div>
+        <div class="copyright">made and edited by pxllowthoughts on Discord.</div>
+    </footer>
+    <div id="popup" class="popup-modal" style="display:none;">
+        <div class="popup-header dark-bar">
+            <span id="popup-title">about</span>
+            <button id="popup-close" title="Close">[ x ]</button>
+        </div>
+        <div class="popup-divider"></div>
+        <div id="popup-content" class="popup-content">
+            <!-- Content will be injected here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
