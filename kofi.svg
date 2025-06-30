@@ -1,7 +1,0 @@
-<!-- Ko-fi SVG -->
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="6" y="12" width="36" height="24" rx="8" fill="#fff" stroke="#fbb4bb" stroke-width="2"/>
-  <rect x="30" y="18" width="8" height="8" rx="3" fill="#fbb4bb"/>
-  <ellipse cx="18" cy="24" rx="7" ry="6" fill="#fbb4bb"/>
-  <path d="M15 24 Q18 28 21 24" stroke="#fff" stroke-width="2" fill="none"/>
-</svg>
