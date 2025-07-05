@@ -384,6 +384,14 @@ footer {
     text-decoration: underline;
     font-size: 1rem;
 }
+.popup-content a,
+.popup-title-link {
+    color: #ad809a !important; /* Replace with your desired color */
+}
+.popup-content a:hover,
+.popup-title-link:hover {
+    color: #a3718e !important; /* Or another hover color */
+}
 .popup-content ul {
     margin: 1.2em 0 1.2em 1.2em;
     padding-left: 1.2em;
