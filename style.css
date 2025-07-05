@@ -87,7 +87,7 @@ header {
     position: absolute;
     right: 1.5rem;
     top: 1.2rem;
-    left: auto;
+    right: auto;
     transform: none;
     width: 60px;
     height: 60px;
