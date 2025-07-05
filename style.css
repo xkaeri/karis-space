@@ -398,7 +398,7 @@ footer {
     transition: color 0.2s;
 }
 .popup-content a:hover {
-    color: #ffb300;
+    color: #a3718e;
 }
 .popup-links-grid {
     display: grid;
@@ -602,7 +602,7 @@ footer {
     cursor: pointer;
 }
 .contact-cute-btn:hover {
-    background: #ffb300;
+    background: #a3718e;
     transform: translateY(-2px) scale(1.04);
 }
 /* Restored classic work popout style */
