@@ -103,8 +103,8 @@ const popupData = {
             <div>
                 <div class="popup-title-main">Kari <span style="font-size:1.2rem; color:#ffa726;"></span></div>
                 <div class="popup-title-sub">Freetime discord admin/moderator</div>
-                <div class="popup-title-sub">Former admin for <span class="popup-title-link" data-popup="ivory" style="cursor:pointer; color:#ffa726; text-decoration:underline;">Ivory's Orchard</span></div>
-                <div class="popup-title-sub">Former mod for <span class="popup-title-link" data-popup="chougakkou" style="cursor:pointer; color:#ffa726; text-decoration:underline;">Chougakkou</span></div>
+                <div class="popup-title-sub">Former admin for <span class="popup-title-link" data-popup="ivory" style="cursor:pointer; color:#b790a7; text-decoration:underline;">Ivory's Orchard</span></div>
+                <div class="popup-title-sub">Former mod for <span class="popup-title-link" data-popup="chougakkou" style="cursor:pointer; color:#b790a7; text-decoration:underline;">Chougakkou</span></div>
             </div>
         </div>
         <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
