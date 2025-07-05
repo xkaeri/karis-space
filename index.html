@@ -38,7 +38,7 @@
         </button>
     </header>
     <!-- Star Button fixed in top right (moved outside header) -->
-    <button id="star-popup-btn" class="star-icon-btn" title="Show star popup" style="background:none;border:none;padding:0;margin:0;cursor:pointer;position:fixed;top:1.2rem;right:1.2rem;left:auto;z-index:2001;width:64px;height:64px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px #f3e6ef;border-radius:16px;">
+    <button id="star-popup-btn" class="star-icon" title="Show star popup" style="background:none;border:none;padding:0;margin:0;cursor:pointer;position:fixed;top:1.2rem;right:1.2rem;left:auto;z-index:2001;width:48px;height:48px;">
       <img src="assets/star.svg" alt="star" class="icon-svg" style="width:48px;height:48px;display:block;object-fit:contain;">
     </button>
     <main>
@@ -77,9 +77,9 @@
             <!-- Content will be injected here -->
         </div>
     </div>
-    <!-- Star Popup Modal: Content injected by JS -->
+    <!-- Star Popup Modal: Empty, draggable -->
     <div id="star-popup" class="popup-modal" style="display:none;z-index:3000;min-width:320px;max-width:95vw;">
-        <div class="popup-header dark-bar">
+        <div class="popup-header dark-bar" id="star-popup-header" style="cursor:move;">
             <span id="star-popup-title">links</span>
             <button id="star-popup-close" title="Close">[ x ]</button>
         </div>

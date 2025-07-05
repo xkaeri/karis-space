@@ -593,33 +593,18 @@ navLinks.forEach(link => {
     const starPopup = document.getElementById('star-popup');
     const starPopupClose = document.getElementById('star-popup-close');
     const starPopupContent = document.getElementById('star-popup-content');
-    // Editable content for the star popup
-    const starPopupHTML = `
-        <div style="display:flex;justify-content:center;gap:2.2rem;margin-bottom:1.2rem;flex-wrap:wrap;">
-            <a href="https://twitter.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#ad809a;font-weight:600;font-size:1.08rem;">
-                <img src="assets/twitter1.svg" alt="twitter" style="width:48px;height:48px;margin-bottom:0.3rem;filter:grayscale(0.1) brightness(1.1);">
-                <span style="text-decoration:underline;">twitter</span>
-            </a>
-            <a href="https://youtube.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#ad809a;font-weight:600;font-size:1.08rem;">
-                <img src="assets/youtube2.svg" alt="youtube" style="width:48px;height:48px;margin-bottom:0.3rem;filter:grayscale(0.1) brightness(1.1);">
-                <span style="text-decoration:underline;">youtube</span>
-            </a>
-            <a href="https://discord.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#ad809a;font-weight:600;font-size:1.08rem;">
-                <img src="assets/discord.svg" alt="discord" style="width:48px;height:48px;margin-bottom:0.3rem;filter:grayscale(0.1) brightness(1.1);">
-                <span style="text-decoration:underline;">discord</span>
-            </a>
-            <a href="https://instagram.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#ad809a;font-weight:600;font-size:1.08rem;">
-                <img src="assets/insta.svg" alt="instagram" style="width:48px;height:48px;margin-bottom:0.3rem;filter:grayscale(0.1) brightness(1.1);">
-                <span style="text-decoration:underline;">instagram</span>
-            </a>
-        </div>
-        <div style="margin:0 auto 0 auto;padding:0.7rem 1.2rem;background:#fafafa;border-radius:8px;color:#888;font-size:1rem;text-align:center;border:1px solid #eee;max-width:350px;">clicking any of the links will open a new tab!</div>
-    `;
+    const starPopupHeader = document.getElementById('star-popup-header');
+    // Empty popup content
+    const starPopupHTML = '';
     if (starBtn && starPopup && starPopupClose && starPopupContent) {
         starBtn.addEventListener('click', function(e) {
             e.stopPropagation();
             starPopupContent.innerHTML = starPopupHTML;
             starPopup.style.display = 'flex';
+            // Center the popup on open
+            starPopup.style.left = '50vw';
+            starPopup.style.top = '30vh';
+            starPopup.style.transform = 'translate(-50%, -30%)';
         });
         starPopupClose.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -630,6 +615,25 @@ navLinks.forEach(link => {
             if (starPopup.style.display === 'flex' && !starPopup.contains(e.target) && e.target !== starBtn && !starBtn.contains(e.target)) {
                 starPopup.style.display = 'none';
             }
+        });
+        // Make the popup draggable
+        let isDragging = false, dragOffsetX = 0, dragOffsetY = 0;
+        starPopupHeader.addEventListener('mousedown', function(e) {
+            isDragging = true;
+            const rect = starPopup.getBoundingClientRect();
+            dragOffsetX = e.clientX - rect.left;
+            dragOffsetY = e.clientY - rect.top;
+            document.body.style.userSelect = 'none';
+        });
+        document.addEventListener('mousemove', function(e) {
+            if (!isDragging) return;
+            starPopup.style.left = e.clientX - dragOffsetX + 'px';
+            starPopup.style.top = e.clientY - dragOffsetY + 'px';
+            starPopup.style.transform = 'none';
+        });
+        document.addEventListener('mouseup', function() {
+            isDragging = false;
+            document.body.style.userSelect = '';
         });
     }
 })();
