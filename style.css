@@ -394,6 +394,22 @@ footer {
     font-size: 1rem;
     font-weight: 600;
 }
+
+.copyright-below {
+    position: relative;
+    z-index: 3;
+    background: rgba(255,255,255,0.85);
+    margin-top: 0.5rem;
+    padding: 0.3em 1.2em 0.3em 1.2em;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 8px #e0e0e0;
+}
+body.dark .copyright-below {
+    background: rgba(34,34,34,0.92);
+    color: #aaa;
+    box-shadow: 0 2px 8px #111;
+}
 /* Popup/Modal styles */
 .popup-modal {
     position: fixed;
