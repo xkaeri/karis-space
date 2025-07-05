@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #fffbe6 0%, #ffe6fa 40%, #b3e0ff 100%);
+    background: linear-gradient(135deg, #232946 0%, #1a1a2e 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,42 @@ body {
     justify-content: flex-start;
     position: relative;
     overflow-x: hidden;
+}
+
+/* Space theme: stars */
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    box-shadow: 0 0 8px 2px #fff;
+    animation: twinkle 2s infinite alternate;
+}
+.star1 { width: 2px; height: 2px; left: 10vw; top: 12vh; animation-delay: 0s; }
+.star2 { width: 3px; height: 3px; left: 30vw; top: 22vh; animation-delay: 0.5s; }
+.star3 { width: 1.5px; height: 1.5px; left: 60vw; top: 8vh; animation-delay: 1s; }
+.star4 { width: 2.5px; height: 2.5px; left: 80vw; top: 18vh; animation-delay: 1.5s; }
+.star5 { width: 2px; height: 2px; left: 50vw; top: 30vh; animation-delay: 0.8s; }
+.star6 { width: 1.5px; height: 1.5px; left: 20vw; top: 60vh; animation-delay: 1.2s; }
+.star7 { width: 2.5px; height: 2.5px; left: 70vw; top: 70vh; animation-delay: 0.3s; }
+.star8 { width: 2px; height: 2px; left: 40vw; top: 80vh; animation-delay: 1.7s; }
+
+@keyframes twinkle {
+    0% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+/* Space theme: moon */
+.moon {
+    position: absolute;
+    top: 3vh;
+    right: 7vw;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at 60% 40%, #fff 70%, #e0e0e0 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 40px 10px #fffbe6, 0 0 80px 20px #c19fb3;
+    z-index: 1;
 }
 
 /* Add pastel floating shapes for extra cuteness */
