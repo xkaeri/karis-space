@@ -393,7 +393,7 @@ footer {
     font-size: 1.08rem;
 }
 .popup-content a {
-    color: #ffa726;
+    color: #ad809a;
     text-decoration: underline;
     transition: color 0.2s;
 }
@@ -426,7 +426,7 @@ footer {
     transition: filter 0.2s, transform 0.2s;
 }
 .popup-link-item:hover {
-    color: #ffa726;
+    color: #ad809a;
     transform: translateY(-4px) scale(1.07);
 }
 .popup-link-item:hover img {
@@ -514,7 +514,7 @@ footer {
 .contact-label {
     min-width: 90px;
     font-weight: 700;
-    color: #ffa726;
+    color: #ad809a;
     font-size: 1.08rem;
     text-transform: lowercase;
     letter-spacing: 0.01em;
@@ -527,7 +527,7 @@ footer {
     transition: color 0.2s;
 }
 .contact-value:hover {
-    color: #ffa726;
+    color: #ad809a;
     text-decoration: underline;
 }
 .contact-note {
@@ -581,13 +581,13 @@ footer {
     margin-bottom: 1.2rem;
 }
 .contact-cute-email a {
-    color: #ffa726;
+    color: #ad809a;
     text-decoration: underline;
     font-weight: 600;
 }
 .contact-cute-btn {
     display: inline-block;
-    background: #ffa726;
+    background: #ad809a;
     color: #fff !important;
     font-size: 1.13rem;
     font-weight: 700;
@@ -668,7 +668,7 @@ footer {
     color: #444;
 }
 .work-cute-note a {
-    color: #ffa726;
+    color: #ad809a;
     text-decoration: underline;
     font-weight: 600;
 }
@@ -773,7 +773,7 @@ footer {
 .skills-section-title {
     font-size: 1.15rem;
     font-weight: 700;
-    color: #ffa726;
+    color: #ad809a;
     margin-bottom: 0.7rem;
     letter-spacing: 0.01em;
     margin-top: 1.5rem;
@@ -991,13 +991,13 @@ body.dark .card {
 }
 body.dark .navbar {
     background: #222;
-    color: #ffa726;
+    color: #ad809a;
 }
 body.dark .nav-icons a {
     color: #fff;
 }
 body.dark .nav-icons a:hover {
-    color: #ffa726;
+    color: #ad809a;
 }
 body.dark .subtitle {
     color: #bbb;
