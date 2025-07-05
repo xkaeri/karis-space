@@ -301,7 +301,7 @@ footer {
 }
 .popup-header {
     cursor: move;
-    background: #ffb6b9;
+    background: #C19FB3;
     color: #fff;
     border-radius: 18px 18px 0 0;
     padding: 0.7rem 1.2rem 0.7rem 1.2rem;
@@ -313,7 +313,7 @@ footer {
     user-select: none;
 }
 .popup-header.dark-bar {
-    background: #fbb4bb;
+    background: #C19FB3;
     color: #fff;
     border-radius: 0;
     padding: 0.9rem 1.5rem 0.9rem 1.5rem;
