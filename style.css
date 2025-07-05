@@ -83,16 +83,6 @@ header {
     display: block;
     object-fit: contain;
 }
-.star-icon {
-    position: absolute;
-    right: 1.5rem;
-    top: 1.2rem;
-    right: auto;
-    transform: none;
-    width: 60px;
-    height: 60px;
-    z-index: 5;
-}
 main {
     flex: 1;
     width: 100vw;
