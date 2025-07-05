@@ -34,8 +34,12 @@
         <div class="cute-bg-shape cute-bg-shape4"></div>
     </div>
     <header>
-        <button id="toggle-theme" title="Toggle light/dark mode">🌞</button>
-        <button id="toggle-mute" title="Mute/unmute sound">🔈</button>
+        <button id="toggle-theme" title="Toggle light/dark mode">
+          <img src="assets/sun.svg" alt="Toggle theme" class="icon-svg">
+        </button>
+        <button id="toggle-mute" title="Mute/unmute sound">
+          <img src="assets/sound.svg" alt="Toggle mute" class="icon-svg">
+        </button>
         <img src="assets/star.svg" alt="star" class="star-icon bounce">
     </header>
     <main>
@@ -74,5 +78,33 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        const themeBtn = document.getElementById('toggle-theme');
+        const themeIcon = themeBtn.querySelector('img');
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            if (document.body.classList.contains('dark')) {
+                themeIcon.src = 'assets/moon.svg';
+                themeIcon.alt = 'Toggle to light mode';
+            } else {
+                themeIcon.src = 'assets/sun.svg';
+                themeIcon.alt = 'Toggle to dark mode';
+            }
+        });
+
+        const muteBtn = document.getElementById('toggle-mute');
+        const muteIcon = muteBtn.querySelector('img');
+        let isMuted = false;
+        muteBtn.addEventListener('click', () => {
+            isMuted = !isMuted;
+            if (isMuted) {
+                muteIcon.src = 'assets/mute.svg';
+                muteIcon.alt = 'Unmute';
+            } else {
+                muteIcon.src = 'assets/sound.svg';
+                muteIcon.alt = 'Mute';
+            }
+        });
+    </script>
 </body>
 </html>
