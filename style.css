@@ -23,7 +23,12 @@ body {
     border-radius: 50%;
     opacity: 0.8;
     box-shadow: 0 0 8px 2px #fff;
-    animation: twinkle 2s infinite alternate;
+    animation: twinkle 2s infinite alternate, star-move 30s linear infinite;
+}
+
+@keyframes star-move {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(30px) translateX(20px); }
 }
 .star1 { width: 2px; height: 2px; left: 10vw; top: 12vh; animation-delay: 0s; }
 .star2 { width: 3px; height: 3px; left: 30vw; top: 22vh; animation-delay: 0.5s; }
@@ -46,10 +51,42 @@ body {
     right: 7vw;
     width: 80px;
     height: 80px;
-    background: radial-gradient(circle at 60% 40%, #fff 70%, #e0e0e0 100%);
     border-radius: 50%;
-    box-shadow: 0 0 40px 10px #fffbe6, 0 0 80px 20px #c19fb3;
     z-index: 1;
+    background: radial-gradient(circle at 60% 40%, #fff 70%, #e0e0e0 100%);
+    box-shadow: 0 0 40px 10px #fffbe6, 0 0 80px 20px #c19fb3;
+    transition: background 0.7s;
+}
+.moon-full {
+    background: radial-gradient(circle at 60% 40%, #fff 70%, #e0e0e0 100%);
+}
+.moon-waning-gibbous {
+    background: linear-gradient(90deg, #e0e0e0 60%, #fff 100%);
+    box-shadow: 0 0 40px 10px #fffbe6, 0 0 80px 20px #c19fb3;
+}
+.moon-last-quarter {
+    background: linear-gradient(90deg, #e0e0e0 50%, #fff 50%);
+    box-shadow: 0 0 40px 10px #fffbe6, 0 0 80px 20px #c19fb3;
+}
+.moon-waning-crescent {
+    background: linear-gradient(90deg, #e0e0e0 80%, #fff 100%);
+    box-shadow: 0 0 40px 10px #fffbe6, 0 0 80px 20px #c19fb3;
+}
+.moon-new {
+    background: radial-gradient(circle at 60% 40%, #222 90%, #444 100%);
+    box-shadow: 0 0 40px 10px #222, 0 0 80px 20px #222;
+}
+.moon-waxing-crescent {
+    background: linear-gradient(90deg, #fff 80%, #e0e0e0 100%);
+    box-shadow: 0 0 40px 10px #fffbe6, 0 0 80px 20px #c19fb3;
+}
+.moon-first-quarter {
+    background: linear-gradient(90deg, #fff 50%, #e0e0e0 50%);
+    box-shadow: 0 0 40px 10px #fffbe6, 0 0 80px 20px #c19fb3;
+}
+.moon-waxing-gibbous {
+    background: linear-gradient(90deg, #fff 60%, #e0e0e0 100%);
+    box-shadow: 0 0 40px 10px #fffbe6, 0 0 80px 20px #c19fb3;
 }
 
 /* Add pastel floating shapes for extra cuteness */

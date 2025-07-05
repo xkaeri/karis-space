@@ -116,6 +116,37 @@
             isMuted = !isMuted;
             setIcons();
         });
+
+        // --- Moon Phase Logic ---
+        // Uses the "weatherapi.com" free API for moon phase (no key required for demo, but you should use your own for production)
+        // You can replace this with any moon phase API you prefer
+        async function updateMoonPhase() {
+            // Default: full moon
+            let phase = 'Full Moon';
+            try {
+                // Use a free API (weatherapi.com demo, replace with your own key for production)
+                const res = await fetch('https://api.weatherapi.com/v1/astronomy.json?key=demo&q=London');
+                const data = await res.json();
+                phase = data.astronomy.astro.moon_phase;
+            } catch (e) {
+                // fallback: full moon
+            }
+            const moon = document.querySelector('.moon');
+            if (!moon) return;
+            // Remove any previous phase class
+            moon.classList.remove('moon-full', 'moon-waning-gibbous', 'moon-last-quarter', 'moon-waning-crescent', 'moon-new', 'moon-waxing-crescent', 'moon-first-quarter', 'moon-waxing-gibbous');
+            // Map phase to class
+            let phaseClass = 'moon-full';
+            if (phase.includes('Waning Gibbous')) phaseClass = 'moon-waning-gibbous';
+            else if (phase.includes('Last Quarter')) phaseClass = 'moon-last-quarter';
+            else if (phase.includes('Waning Crescent')) phaseClass = 'moon-waning-crescent';
+            else if (phase.includes('New Moon')) phaseClass = 'moon-new';
+            else if (phase.includes('Waxing Crescent')) phaseClass = 'moon-waxing-crescent';
+            else if (phase.includes('First Quarter')) phaseClass = 'moon-first-quarter';
+            else if (phase.includes('Waxing Gibbous')) phaseClass = 'moon-waxing-gibbous';
+            moon.classList.add(phaseClass);
+        }
+        updateMoonPhase();
     </script>
 </body>
 </html>
