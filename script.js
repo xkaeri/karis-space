@@ -597,8 +597,7 @@ navLinks.forEach(link => {
     // Empty popup content
     const starPopupHTML = '';
     if (starBtn && starPopup && starPopupClose && starPopupContent) {
-        starBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
+        starBtn.addEventListener('click', function() {
             starPopupContent.innerHTML = starPopupHTML;
             starPopup.style.display = 'flex';
             // Center the popup on open
@@ -606,8 +605,7 @@ navLinks.forEach(link => {
             starPopup.style.top = '30vh';
             starPopup.style.transform = 'translate(-50%, -30%)';
         });
-        starPopupClose.addEventListener('click', function(e) {
-            e.stopPropagation();
+        starPopupClose.addEventListener('click', function() {
             starPopup.style.display = 'none';
         });
         // Optional: close popup when clicking outside
