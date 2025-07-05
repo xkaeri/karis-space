@@ -83,6 +83,7 @@ header {
     display: block;
     object-fit: contain;
 }
+
 main {
     flex: 1;
     width: 100vw;
@@ -248,6 +249,17 @@ main {
     width: 80px;
     z-index: 1;
     animation: bounce 2s infinite;
+}
+.star-icon {
+    position: fixed;
+    right: 1.2rem;
+    top: 1.2rem;
+    left: auto;
+    transform: none;
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+    pointer-events: none;
 }
 .star-icon.bounce {
     animation: bounce 2.2s infinite;
