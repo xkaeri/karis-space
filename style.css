@@ -563,7 +563,7 @@ body.dark .copyright-below {
 }
 .faq-question {
     width: 100%;
-    background: none;
+    background: #a3718e;
     border: none;
     outline: none;
     text-align: left;
