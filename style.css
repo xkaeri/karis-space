@@ -226,7 +226,7 @@ main {
     transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 .nav-icons a:hover {
-    color: #ff757b;
+    color: #ad809a;
     background: transparent;
     transform: translateY(-4px) scale(1.07);
 }
@@ -337,7 +337,7 @@ footer {
     padding: 0 0.5rem;
 }
 #popup-close:hover {
-    color: #ffa726;
+    color: #ad809a;
 }
 .popup-divider {
     width: 100%;
@@ -370,7 +370,7 @@ footer {
 .popup-title-main {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #ffa726;
+    color: #ad809a;
     line-height: 1.1;
     margin-bottom: 0.2rem;
 }
@@ -380,7 +380,7 @@ footer {
     margin-bottom: 0.2rem;
 }
 .popup-title-link {
-    color: #ff757b;
+    color: #ad809a;
     text-decoration: underline;
     font-size: 1rem;
 }
