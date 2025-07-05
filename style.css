@@ -563,20 +563,21 @@ body.dark .copyright-below {
 }
 .faq-question {
     width: 100%;
-    background: #a3718e;
+    background: #a3718e !important;
     border: none;
     outline: none;
     text-align: left;
     font-size: 1.13rem;
     font-family: inherit;
     font-weight: 500;
-    color: #444;
+    color: #fff;
     padding: 1.1rem 1.2rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: background 0.2s;
+    box-shadow: 0 2px 8px #e0e0e0;
 }
 .faq-question:hover {
     background: #ffe6fa;
@@ -1033,6 +1034,9 @@ body.dark .copyright-below {
     .faq-question {
         font-size: 1rem;
         padding: 0.9rem 0.7rem;
+        background: unset !important;
+        color: unset !important;
+        box-shadow: unset !important;
     }
     .faq-answer {
         font-size: 0.98rem;
