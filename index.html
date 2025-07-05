@@ -36,9 +36,11 @@
         <button id="toggle-mute" title="Mute/unmute sound">
           <img src="assets/sound.svg" alt="Toggle mute" class="icon-svg">
         </button>
-        <button id="star-popup-btn" class="star-icon bounce" title="Show star popup" style="background:none;border:none;padding:0;margin:0;cursor:pointer;position:relative;z-index:2;">
-          <img src="assets/star.svg" alt="star" style="width:48px;height:48px;display:block;object-fit:contain;">
-        </button>
+    </header>
+    <!-- Star Button fixed in top right -->
+    <button id="star-popup-btn" class="star-icon bounce" title="Show star popup" style="background:none;border:none;padding:0;margin:0;cursor:pointer;position:fixed;top:1.2rem;right:1.2rem;left:auto;z-index:2001;width:48px;height:48px;">
+      <img src="assets/star.svg" alt="star" style="width:48px;height:48px;display:block;object-fit:contain;">
+    </button>
     </header>
     <main>
         <div class="card cute-shadow">
@@ -76,17 +78,14 @@
             <!-- Content will be injected here -->
         </div>
     </div>
-    <!-- Star Popup Modal -->
-    <div id="star-popup" class="popup-modal" style="display:none;z-index:2000;">
+    <!-- Star Popup Modal: Content injected by JS -->
+    <div id="star-popup" class="popup-modal" style="display:none;z-index:3000;min-width:320px;max-width:95vw;">
         <div class="popup-header dark-bar">
-            <span id="star-popup-title">special star!</span>
+            <span id="star-popup-title">links</span>
             <button id="star-popup-close" title="Close">[ x ]</button>
         </div>
         <div class="popup-divider"></div>
-        <div class="popup-content" style="text-align:center;">
-            <img src="assets/star.svg" alt="star" style="width:64px;height:64px;margin-bottom:1rem;">
-            <div style="font-size:1.2rem;color:#ad809a;font-weight:600;">You found the secret star! 🌟<br>Thanks for visiting kari's space!</div>
-        </div>
+        <div id="star-popup-content" class="popup-content" style="text-align:center;"></div>
     </div>
     <script src="script.js"></script>
     <script>
@@ -127,11 +126,37 @@
             setIcons();
         });
 
-        // Star popup logic
+        // Star popup logic (content injected by JS)
         const starBtn = document.getElementById('star-popup-btn');
         const starPopup = document.getElementById('star-popup');
         const starPopupClose = document.getElementById('star-popup-close');
+        const starPopupContent = document.getElementById('star-popup-content');
+
+        // Editable content for the star popup
+        const starPopupHTML = `
+            <div style="display:flex;justify-content:center;gap:2.2rem;margin-bottom:1.2rem;flex-wrap:wrap;">
+                <a href="https://twitter.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#ad809a;font-weight:600;font-size:1.08rem;">
+                    <img src="assets/twitter1.svg" alt="twitter" style="width:48px;height:48px;margin-bottom:0.3rem;filter:grayscale(0.1) brightness(1.1);">
+                    <span style="text-decoration:underline;">twitter</span>
+                </a>
+                <a href="https://youtube.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#ad809a;font-weight:600;font-size:1.08rem;">
+                    <img src="assets/youtube2.svg" alt="youtube" style="width:48px;height:48px;margin-bottom:0.3rem;filter:grayscale(0.1) brightness(1.1);">
+                    <span style="text-decoration:underline;">youtube</span>
+                </a>
+                <a href="https://discord.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#ad809a;font-weight:600;font-size:1.08rem;">
+                    <img src="assets/discord.svg" alt="discord" style="width:48px;height:48px;margin-bottom:0.3rem;filter:grayscale(0.1) brightness(1.1);">
+                    <span style="text-decoration:underline;">discord</span>
+                </a>
+                <a href="https://instagram.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#ad809a;font-weight:600;font-size:1.08rem;">
+                    <img src="assets/insta.svg" alt="instagram" style="width:48px;height:48px;margin-bottom:0.3rem;filter:grayscale(0.1) brightness(1.1);">
+                    <span style="text-decoration:underline;">instagram</span>
+                </a>
+            </div>
+            <div style="margin:0 auto 0 auto;padding:0.7rem 1.2rem;background:#fafafa;border-radius:8px;color:#888;font-size:1rem;text-align:center;border:1px solid #eee;max-width:350px;">clicking any of the links will open a new tab!</div>
+        `;
+
         starBtn.addEventListener('click', () => {
+            starPopupContent.innerHTML = starPopupHTML;
             starPopup.style.display = 'flex';
         });
         starPopupClose.addEventListener('click', () => {
