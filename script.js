@@ -2,7 +2,7 @@
 const themeBtn = document.getElementById('toggle-theme');
 themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
-    themeBtn.textContent = document.body.classList.contains('dark') ? '🌙' : '🌞';
+    // SVG icon swap handled in index.html script
 });
 
 // Mute toggle (placeholder, no sound implemented)
@@ -39,8 +39,7 @@ if (!document.getElementById('sound-success')) {
 }
 // Update mute toggle to control sound
 muteBtn.addEventListener('click', () => {
-    muteBtn.textContent = muteBtn.textContent === '🔈' ? '🔇' : '🔈';
-    isMuted = muteBtn.textContent === '🔇';
+    // SVG icon swap and isMuted handled in index.html script
 });
 function playSound(id) {
     if (isMuted) return;
