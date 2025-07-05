@@ -36,7 +36,9 @@
         <button id="toggle-mute" title="Mute/unmute sound">
           <img src="assets/sound.svg" alt="Toggle mute" class="icon-svg">
         </button>
-        <img src="assets/star.svg" alt="star" class="star-icon bounce">
+        <button id="star-popup-btn" class="star-icon-btn" title="Show star popup" style="background:none;border:none;padding:0;margin:0;cursor:pointer;position:relative;z-index:2;">
+          <img src="assets/star.svg" alt="star" class="star-icon bounce">
+        </button>
     </header>
     <main>
         <div class="card cute-shadow">
@@ -72,6 +74,18 @@
         <div class="popup-divider"></div>
         <div id="popup-content" class="popup-content">
             <!-- Content will be injected here -->
+        </div>
+    </div>
+    <!-- Star Popup Modal -->
+    <div id="star-popup" class="popup-modal" style="display:none;z-index:2000;">
+        <div class="popup-header dark-bar">
+            <span id="star-popup-title">special star!</span>
+            <button id="star-popup-close" title="Close">[ x ]</button>
+        </div>
+        <div class="popup-divider"></div>
+        <div class="popup-content" style="text-align:center;">
+            <img src="assets/star.svg" alt="star" style="width:64px;height:64px;margin-bottom:1rem;">
+            <div style="font-size:1.2rem;color:#ad809a;font-weight:600;">You found the secret star! 🌟<br>Thanks for visiting kari's space!</div>
         </div>
     </div>
     <script src="script.js"></script>
@@ -111,6 +125,23 @@
         muteBtn.addEventListener('click', () => {
             isMuted = !isMuted;
             setIcons();
+        });
+
+        // Star popup logic
+        const starBtn = document.getElementById('star-popup-btn');
+        const starPopup = document.getElementById('star-popup');
+        const starPopupClose = document.getElementById('star-popup-close');
+        starBtn.addEventListener('click', () => {
+            starPopup.style.display = 'flex';
+        });
+        starPopupClose.addEventListener('click', () => {
+            starPopup.style.display = 'none';
+        });
+        // Optional: close popup when clicking outside
+        window.addEventListener('click', function(e) {
+            if (starPopup.style.display === 'flex' && !starPopup.contains(e.target) && e.target !== starBtn && !starBtn.contains(e.target)) {
+                starPopup.style.display = 'none';
+            }
         });
     </script>
 </body>
