@@ -177,7 +177,6 @@ const popupData = {
                     <div class="skills-title">TOOLS</div>
                     <div class="skills-list">
                         <span class="skills-chip">Discord</span>
-                        <span class="skills-chip">Webhook.org</span>
                         <span class="skills-chip">VStudio Code</span>
                         <span class="skills-chip">Google Docs</span>
                     </div>
@@ -185,7 +184,9 @@ const popupData = {
                 <div class="skills-col">
                     <div class="skills-title">DEVELOPMENT</div>
                     <div class="skills-list">
-                        <span class="skills-chip">HTML/CSS</span>
+                        <span class="skills-chip">HTML</span>
+                        <span class="skills-chip">CSS</span>
+                        <span class="skills-chip">JavaScript</span>
                     </div>
                 </div>
             </div>
