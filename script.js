@@ -117,7 +117,7 @@ const popupData = {
         </ul>
         <p><b>Curent Projects:</b>
         <ul>
-        This website
+        <li>This website</li>
         </ul></p>
         interested in working with me? send me an email at <a href="mailto:hi@sharyap.com">xkaeriiii@gmail.com</a>! :)
         </div>
