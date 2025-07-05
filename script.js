@@ -115,6 +115,10 @@ const popupData = {
             <li>do server websites such as: <a href="https://just-kaboodle.vercel.app/about.html" target="_blank" class="popup-link_item">just-kaboodle.vercel.app</a> this was never released and was something i did in my free time</li>
             <li>am learning how to code</li>
         </ul>
+        <p><b>Curent Projects:</b>
+        <ul>
+        This website
+        </ul></p>
         interested in working with me? send me an email at <a href="mailto:hi@sharyap.com">xkaeriiii@gmail.com</a>! :)
         </div>
         <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
