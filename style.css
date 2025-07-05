@@ -82,6 +82,11 @@ header {
     height: 1.7rem;
     display: block;
     object-fit: contain;
+    transition: filter 0.2s;
+}
+
+body.dark .icon-svg {
+    filter: invert(1) brightness(1.7) contrast(1.2);
 }
 
 main {

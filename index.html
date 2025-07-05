@@ -81,8 +81,12 @@
     <script>
         const themeBtn = document.getElementById('toggle-theme');
         const themeIcon = themeBtn.querySelector('img');
-        themeBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark');
+        const muteBtn = document.getElementById('toggle-mute');
+        const muteIcon = muteBtn.querySelector('img');
+        let isMuted = false;
+
+        // Set icons on page load
+        function setIcons() {
             if (document.body.classList.contains('dark')) {
                 themeIcon.src = 'assets/moon.svg';
                 themeIcon.alt = 'Toggle to light mode';
@@ -90,13 +94,6 @@
                 themeIcon.src = 'assets/sun.svg';
                 themeIcon.alt = 'Toggle to dark mode';
             }
-        });
-
-        const muteBtn = document.getElementById('toggle-mute');
-        const muteIcon = muteBtn.querySelector('img');
-        let isMuted = false;
-        muteBtn.addEventListener('click', () => {
-            isMuted = !isMuted;
             if (isMuted) {
                 muteIcon.src = 'assets/mute.svg';
                 muteIcon.alt = 'Unmute';
@@ -104,6 +101,19 @@
                 muteIcon.src = 'assets/sound.svg';
                 muteIcon.alt = 'Mute';
             }
+        }
+
+        // On page load
+        setIcons();
+
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            setIcons();
+        });
+
+        muteBtn.addEventListener('click', () => {
+            isMuted = !isMuted;
+            setIcons();
         });
     </script>
 </body>
