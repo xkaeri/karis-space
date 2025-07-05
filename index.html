@@ -24,15 +24,10 @@
 </head>
 <body>
     <div class="background-decor">
-        <div class="moon"></div>
-        <div class="star star1"></div>
-        <div class="star star2"></div>
-        <div class="star star3"></div>
-        <div class="star star4"></div>
-        <div class="star star5"></div>
-        <div class="star star6"></div>
-        <div class="star star7"></div>
-        <div class="star star8"></div>
+        <svg class="wave-bg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#a3d8ff" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,229.3C840,235,960,213,1080,197.3C1200,181,1320,171,1380,165.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        </svg>
+        <!-- Optionally keep moon and stars for night mode, or remove for day mode -->
     </div>
     <header>
         <button id="toggle-theme" title="Toggle light/dark mode">
@@ -116,37 +111,6 @@
             isMuted = !isMuted;
             setIcons();
         });
-
-        // --- Moon Phase Logic ---
-        // Uses the "weatherapi.com" free API for moon phase (no key required for demo, but you should use your own for production)
-        // You can replace this with any moon phase API you prefer
-        async function updateMoonPhase() {
-            // Default: full moon
-            let phase = 'Full Moon';
-            try {
-                // Use a free API (weatherapi.com demo, replace with your own key for production)
-                const res = await fetch('https://api.weatherapi.com/v1/astronomy.json?key=demo&q=London');
-                const data = await res.json();
-                phase = data.astronomy.astro.moon_phase;
-            } catch (e) {
-                // fallback: full moon
-            }
-            const moon = document.querySelector('.moon');
-            if (!moon) return;
-            // Remove any previous phase class
-            moon.classList.remove('moon-full', 'moon-waning-gibbous', 'moon-last-quarter', 'moon-waning-crescent', 'moon-new', 'moon-waxing-crescent', 'moon-first-quarter', 'moon-waxing-gibbous');
-            // Map phase to class
-            let phaseClass = 'moon-full';
-            if (phase.includes('Waning Gibbous')) phaseClass = 'moon-waning-gibbous';
-            else if (phase.includes('Last Quarter')) phaseClass = 'moon-last-quarter';
-            else if (phase.includes('Waning Crescent')) phaseClass = 'moon-waning-crescent';
-            else if (phase.includes('New Moon')) phaseClass = 'moon-new';
-            else if (phase.includes('Waxing Crescent')) phaseClass = 'moon-waxing-crescent';
-            else if (phase.includes('First Quarter')) phaseClass = 'moon-first-quarter';
-            else if (phase.includes('Waxing Gibbous')) phaseClass = 'moon-waxing-gibbous';
-            moon.classList.add(phaseClass);
-        }
-        updateMoonPhase();
     </script>
 </body>
 </html>
