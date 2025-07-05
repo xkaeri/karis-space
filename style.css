@@ -85,11 +85,13 @@ header {
 }
 .star-icon {
     position: absolute;
-    left: 50%;
-    top: 0.5rem;
-    transform: translateX(-50%);
+    right: 1.5rem;
+    top: 1.2rem;
+    left: auto;
+    transform: none;
     width: 60px;
     height: 60px;
+    z-index: 5;
 }
 main {
     flex: 1;
