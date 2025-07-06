@@ -112,7 +112,6 @@ const popupData = {
         <ul>
             <li>moderate servers</a></li>
             <li>setup discord servers, bots and webhooks</li>
-            <li>do server websites such as: <a href="https://just-kaboodle.vercel.app/about.html" target="_blank" class="popup-link_item">just-kaboodle.vercel.app</a> this was never released and was something i did in my free time</li>
             <li>am learning how to code</li>
         </ul>
         <p><b>Curent Projects:</b>
@@ -133,12 +132,11 @@ const popupData = {
         <b>OTHER INTERESTS:<b>
         <ul>
             <li>anime/manga</li>
-            <li>games such as: Metal Hellsinger, Minecraft, Osu!</li>
+            <li>Legend of Zelda and Pokemon Franchise</li>
             <li>music, singing and dancing</li>   
             <li>movies, books, series</li>
             <li>the moon and stars</li>
             <li>cats</li>
-            <li>Legend of Zelda and Pokemon Franchise</li>
             <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
         <div class="about-education-block">
             <div class="about-language-title">LANGUAGE</div>
@@ -199,14 +197,11 @@ const popupData = {
             <div class="skills-gallery" id="work-gallery" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; align-items: center; margin-top: 1.5em;">
                 <span class="skills-note" style="min-width:220px; text-align:center;">Ivory's Orchard</span>
                 <span class="skills-note" style="min-width:220px; text-align:center;">Chougakkou</span>
-                <span class="skills-note" style="min-width:220px; text-align:center;">Claramiles Community Discord</span>
-                <span class="skills-note" style="min-width:220px; text-align:center;">sic92 Community Discord</span>
             </div>
             <div class="skills-section-title">what i do</div>
             <div class="skills-list">
                 <span class="skills-chip">Discord Server setup</span>
                 <span class="skills-chip">Discord Bot's setup</span>
-                <span class="skills-chip">Server Websites for your discord server</span>
                 <span class="skills-chip">moderating your community/discord server</span>
             </div>
             <div class="skills-note">Just send me an email, if you'd like to talk about what else I can do for you.</div>
