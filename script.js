@@ -240,10 +240,6 @@ const popupData = {
                 <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">can i ask you questons about discord?<span class="faq-arrow" style="float:right;">▾</span></button>
                 <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
                     <ul style="margin:0; padding-left:1.2em;"><li>definitely, i love to talk about discord!</li></ul>
-            <div class="faq-item">
-                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">what are your pronouns?<span class="faq-arrow" style="float:right;">▾</span></button>
-                <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
-                    <ul style="margin:0; padding-left:1.2em;"><li>My pronouns are she/her</li></ul>
                 </div>
                 </div>
             </div>
