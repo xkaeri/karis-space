@@ -691,8 +691,7 @@ body.dark .copyright-below {
     color: #ad809a;
     text-decoration: underline;
     font-weight: 600;
-}
-.contact-cute-btn {
+}.contact-cute-btn {
     display: inline-block;
     background: #ad809a;
     color: #fff !important;
@@ -709,7 +708,7 @@ body.dark .copyright-below {
     cursor: pointer;
 }
 .contact-cute-btn:hover {
-    background: #a3718e;
+    background: #dfcdd8;
     transform: translateY(-2px) scale(1.04);
 }
 /* Restored classic work popout style */
