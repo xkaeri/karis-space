@@ -540,7 +540,7 @@ body.dark .copyright-below {
 .popup-links-note {
     margin: 1.2rem auto 0 auto;
     padding: 0.7rem 1.2rem;
-    background: #ad809a;
+    background: none;
     border-radius: 8px;
     color: #888;
     font-size: 1rem;
