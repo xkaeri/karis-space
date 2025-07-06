@@ -639,12 +639,12 @@ body.dark .copyright-below {
 .contact-note {
     margin: 1.2rem auto 0 auto;
     padding: 0.7rem 1.2rem;
-    background: none;
+    background: #ad809a;
     border-radius: 8px;
-    color: #444;
+    color: #fff;
     font-size: 1rem;
     text-align: center;
-    border: 1px solid #eee;
+    border: none;
     max-width: 350px;
 }
 .contact-cute {
