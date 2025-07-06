@@ -1,25 +1,4 @@
-/* Email CTA Button */
-.email-cta-btn {
-    display: block;
-    margin: 1.2rem auto 0 auto;
-    padding: 0.7rem 1.2rem;
-    background: #C19FB3;
-    color: #fff;
-    font-size: 1.35rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: none;
-    transition: background 0.2s, transform 0.2s;
-    cursor: pointer;
-    letter-spacing: 0.01em;
-}
-.email-cta-btn:hover {
-    background: #ad809a;
-    transform: translateY(-2px) scale(1.04);
-}
+
 /* Reset and base styles */
 * {
     box-sizing: border-box;
