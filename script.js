@@ -237,9 +237,9 @@ const popupData = {
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">What games do you play?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">From where is your name?<span class="faq-arrow" style="float:right;">▾</span></button>
                 <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
-                    <ul style="margin:0; padding-left:1.2em;"><li>i play honkai star rail and minecraft</li></ul>
+                    <ul style="margin:0; padding-left:1.2em;"><li>my name and domain name is from this song <a href="https://www.youtube.com/watch?v=f6TytcA47rI&pp=ygUIa3VuaW5hcnU%3D">Kuninaru</a></li></ul>
                 </div>
                 </div>
             </div>
