@@ -100,7 +100,7 @@ const popupData = {
         <div class="popup-profile">
             <img src="assets/avatar.jpeg" alt="avatar" class="popup-avatar">
             <div>
-                <div class="popup-title-main">Kari <span style="font-size:1.2rem; color:#ffa726;"></span></div>
+                <div class="popup-title-main">Naru <span style="font-size:1.2rem; color:#ffa726;"></span></div>
                 <div class="popup-title-sub">Freetime discord admin/moderator</div>
                 <div class="popup-title-sub">Former admin for <span class="popup-title-link" data-popup="ivory" style="cursor:pointer; color:#b790a7; text-decoration:underline;">Ivory's Orchard</span></div>
                 <div class="popup-title-sub">Former mod for <span class="popup-title-link" data-popup="chougakkou" style="cursor:pointer; color:#b790a7; text-decoration:underline;">Chougakkou</span></div>
@@ -108,11 +108,11 @@ const popupData = {
         </div>
         <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
         <div style="margin-bottom:1.2em;">
-        hi! i'm kari, a discord admin/moderator. i...
+        hi! i'm naru or you can also call me kuni, a catgirl nya~. i...
         <ul>
-            <li>moderate servers</a></li>
-            <li>setup discord servers, bots and webhooks</li>
-            <li>am learning how to code</li>
+            <li>love honkai star rail!</a></li>
+            <li>like to moderate discord servers</li>
+            <li>am trying to learn how to code</li>
         </ul>
         <p><b>Curent Projects:</b>
         <ul>
@@ -213,15 +213,15 @@ const popupData = {
         content: `
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">what software do you use?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">what are your pronouns and gender?<span class="faq-arrow" style="float:right;">▾</span></button>
                 <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
-                    <ul style="margin:0; padding-left:1.2em;"><li>visual studio code, webhook.org and various different free copy emote websites.</li></ul>
+                    <ul style="margin:0; padding-left:1.2em;"><li>I am a trans girl going by she/her</li></ul>
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">do you do commissions?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">from where are you?<span class="faq-arrow" style="float:right;">▾</span></button>
                 <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
-                    <ul style="margin:0; padding-left:1.2em;"><li>I do <b>not</b>!</li></ul>
+                    <ul style="margin:0; padding-left:1.2em;"><li>I am from germany!</li></ul>
                 </div>
             </div>
             <div class="faq-item">
@@ -231,15 +231,15 @@ const popupData = {
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">are you currently moderating any server?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">who are your favorite hsr characters?<span class="faq-arrow" style="float:right;">▾</span></button>
                 <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
-                    <ul style="margin:0; padding-left:1.2em;"><li>I am not, but I would like to manage/moderate again.</li></ul>
+                    <ul style="margin:0; padding-left:1.2em;"><li>My favorite honkai star rail characters are: Cipher, Acheron, Castorice, Phainon, Anaxa and Dan Heng Imbibitor Lunae</li></ul>
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">can i ask you questons about discord?<span class="faq-arrow" style="float:right;">▾</span></button>
+                <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">What games do you play?<span class="faq-arrow" style="float:right;">▾</span></button>
                 <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
-                    <ul style="margin:0; padding-left:1.2em;"><li>definitely, i love to talk about discord!</li></ul>
+                    <ul style="margin:0; padding-left:1.2em;"><li>i play honkai star rail and minecraft</li></ul>
                 </div>
                 </div>
             </div>
