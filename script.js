@@ -62,38 +62,6 @@ const popupClose = document.getElementById('popup-close');
 const navLinks = document.querySelectorAll('.nav-icons a');
 
 const popupData = {
-    ivory: {
-        title: "Ivory's Orchard",
-        content: `
-            <div class="contact-cute">
-                <div class="contact-cute-title">Ivory's Orchard</div>
-                <div class="contact-cute-desc">
-                    Welcome to the popup for <b>Ivory's Orchard</b>!<br>
-                    This is a sample popup styled like your contact popup. You can add more info about the server, links, or anything else here.
-                </div>
-                <img src="assets/mail-chibi.png" alt="mail chibi" class="contact-cute-img">
-                <div class="contact-cute-email">
-                    For more info, contact: <a href="mailto:xkaeriiii@gmail.com">xkaeriiii@gmail.com</a>
-                </div>
-            </div>
-        `
-    },
-    chougakkou: {
-        title: "Chougakkou",
-        content: `
-            <div class="contact-cute">
-                <div class="contact-cute-title">Chougakkou</div>
-                <div class="contact-cute-desc">
-                    Welcome to the popup for <b>Chougakkou</b>!<br>
-                    This is a sample popup styled like your contact popup. You can add more info about the server, links, or anything else here.
-                </div>
-                <img src="assets/mail-chibi.png" alt="mail chibi" class="contact-cute-img">
-                <div class="contact-cute-email">
-                    For more info, contact: <a href="mailto:xkaeriiii@gmail.com">xkaeriiii@gmail.com</a>
-                </div>
-            </div>
-        `
-    },
     about: {
         title: 'about me',
         content: `
@@ -101,9 +69,7 @@ const popupData = {
             <img src="assets/avatar.jpeg" alt="avatar" class="popup-avatar">
             <div>
                 <div class="popup-title-main">Kari <span style="font-size:1.2rem; color:#ffa726;"></span></div>
-                <div class="popup-title-sub">Freetime discord admin/moderator</div>
-                <div class="popup-title-sub">Former admin for <span class="popup-title-link" data-popup="ivory" style="cursor:pointer; color:#b790a7; text-decoration:underline;">Ivory's Orchard</span></div>
-                <div class="popup-title-sub">Former mod for <span class="popup-title-link" data-popup="chougakkou" style="cursor:pointer; color:#b790a7; text-decoration:underline;">Chougakkou</span></div>
+                <div class="popup-title-sub">Student and Teenager</div>
             </div>
         </div>
         <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
@@ -111,7 +77,7 @@ const popupData = {
         hi! i'm kari. i...
         <ul>
             <li>love honkai star rail!</a></li>
-            <li>like to moderate discord servers</li>
+            <li>do things</li>
             <li>am trying to learn how to code</li>
         </ul>
         <p><b>Curent Projects:</b>
@@ -196,16 +162,14 @@ const popupData = {
                 </div>
             </div>
             <div class="skills-title" style="margin-top:2em;">my work!</div>
-            <div class="skills-desc">here are some of the servers that i have moderated/managed or have redesiginged.</div>
+            <div class="skills-desc">TBA</div>
             <div class="skills-gallery" id="work-gallery" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; align-items: center; margin-top: 1.5em;">
-                <span class="skills-note" style="min-width:220px; text-align:center;">Ivory's Orchard</span>
-                <span class="skills-note" style="min-width:220px; text-align:center;">Chougakkou</span>
+                <span class="skills-note" style="min-width:220px; text-align:center;">TBA</span>
+                <span class="skills-note" style="min-width:220px; text-align:center;">TBA</span>
             </div>
             <div class="skills-section-title">what i do</div>
             <div class="skills-list">
-                <span class="skills-chip">Discord Server setup</span>
-                <span class="skills-chip">Discord Bot's setup</span>
-                <span class="skills-chip">moderating your community/discord server</span>
+                <span class="skills-chip">moderate your community</span>
             </div>
             <div class="skills-note">Just send me an email, if you'd like to talk about what else I can do for you.</div>
         </div>
@@ -411,36 +375,6 @@ function bindAboutNestedPopoutTriggers() {
 
 // --- Nested popout content map for about popup links ---
 const aboutNestedPopoutContent = {
-    "Ivory's Orchard": {
-        title: "More about Ivory's Orchard",
-        content: `<div style="text-align:center;">
-            <b>Ivory's Orchard</b> is a Discord server based around the content creator IvoryTV..<br><br>
-            <img src="assets/ivory.png" alt="Ivory's Orchard" style="max-width:120px; margin-bottom:1em;" />
-            <br>I was staff member for Ivory's Orchard from August 2024 to end of March 2025.<br>
-            <br>I resigned after a major incident happened within the staff, that called for my resignation after a lot of drama caused by me.<br>
-            <br><b>Things I did for Ivory's Orchard:</b><br>
-            <ul>
-                <li>Added QOTD(question of the day) to the server.</li>
-                <li>managed events, staff and the discord</li>
-                <li>was the most active staff member</li>
-                <li>created the ivosmp minecraft server</li>
-                <br>The server still exists, but is not as active as it used to be. You can still join it at <a href="https://discord.gg/ivorycello" target="_blank">discord.gg/ivorycello</a>.<br>
-        </div>`
-    },
-    "Chougakkou": {
-        title: "More about Chougakkou",
-        content: `<div style="text-align:center;">
-            <b>Chougakkou</b> was a pretty active server by the TikToker Chougaki but has gone inactive around end of November 2024.<br><br>
-            <img src="assets/chougaki.png" alt="Chougakkou" style="max-width:120px; margin-bottom:1em;" />
-            <br>I was moderator for Chougakkou from June 2024 to end of middle of November 2024.<br>
-            <br>I was removed after I had a very bad mental health which caused me to do stuff that was unacceptable as a mod.<br>
-            <br><b>Things I did for Chougakkou:</b><br>
-            <ul>
-                <li>Moderated the server</li>
-                <li>Managed events</li>
-                <br>You can still join the server at <a href="https://discord.gg/chougaki" target="_blank">discord.gg/chougaki</a>.<br>
-        </div>`
-    },
     "english": {
         title: "More about English",
         content: `<div style="text-align:center;">I'm pretty proud of my English and use it for most of my online communication.<br>Feel free to chat with me in English at any time!</div>`
