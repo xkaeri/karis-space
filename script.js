@@ -124,7 +124,7 @@ const popupData = {
             <a href="https://www.youtube.com/@xkaeri" target="_blank" class="popup-link-item">
                 <img src="assets/youtube.svg" alt="youtube"><span>youtube</span>
             </a>
-            <a href="https://discord.com/DQQDsA22" target="_blank" class="popup-link-item">
+            <a href="https://discord.gg/DQQDsA22" target="_blank" class="popup-link-item">
                 <img src="assets/discord.svg" alt="discord"><span>discord</span>
             </a>
             <a href="https://www.instagram.com/kittypaw_nya/?next=%2F" target="_blank" class="popup-link-item">
