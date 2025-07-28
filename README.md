@@ -8,19 +8,19 @@
 ``JavaScript``
 
 # Features
-``about popup``
+About Popup
 
 <img width="837" height="636" alt="image" src="https://github.com/user-attachments/assets/b6af47ce-4aba-40cd-beb6-89b5bb80e67e" />
 
-``links popup``
+Links Popup
 
 <img width="591" height="499" alt="image" src="https://github.com/user-attachments/assets/3b8d4062-c884-4d49-af28-7ab7af95a0d0" />
 
-``work popup``
+Work Popup
 
 <img width="972" height="626" alt="image" src="https://github.com/user-attachments/assets/268ba5fa-c6d0-48ac-8df7-b6f0e64ffc60" />
 
-``faq popup``
+FAQ Popup
 
 <img width="593" height="631" alt="image" src="https://github.com/user-attachments/assets/e50adcd3-61f4-45d7-b52f-7d6aa49bd1ce" />
 
