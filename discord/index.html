@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=https://discord.gg/DQQDsA22">
+    <meta http-equiv="refresh" content="2; url=https://discord.gg/DQQDsA22">
     <title>Redirecting to Discord...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #fff;
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #ffd6e0 0%, #c19fb3 100%);
+        }
+        .loader {
+            text-align: center;
+        }
+        .loader img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        .message {
+            color: #fff;
+            font-size: 1.2em;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
 </head>
 <body>
-    Redirecting to Discord server...
+    <div class="loader">
+        <img src="../assets/icon.svg" alt="Loading">
+        <div class="message">Redirecting to Discord...</div>
+    </div>
     <script>
         window.location.href = "https://discord.gg/DQQDsA22";
     </script>
