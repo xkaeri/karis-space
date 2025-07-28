@@ -147,9 +147,7 @@ const popupData = {
                 <div class="skills-col">
                     <div class="skills-title">TOOLS</div>
                     <div class="skills-list">
-                        <span class="skills-chip">Discord</span>
                         <span class="skills-chip">VStudio Code</span>
-                        <span class="skills-chip">Google Docs</span>
                     </div>
                 </div>
                 <div class="skills-col">
@@ -162,9 +160,9 @@ const popupData = {
                 </div>
             </div>
             <div class="skills-title" style="margin-top:2em;">my work!</div>
-            <div class="skills-desc">TBA</div>
+            <div class="skills-desc">Projexrs</div>
             <div class="skills-gallery" id="work-gallery" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; align-items: center; margin-top: 1.5em;">
-                <span class="skills-note" style="min-width:220px; text-align:center;">TBA</span>
+                <span class="skills-note" style="min-width:220px; text-align:center;">This Website</span>
                 <span class="skills-note" style="min-width:220px; text-align:center;">TBA</span>
             </div>
             <div class="skills-section-title">what i do</div>
