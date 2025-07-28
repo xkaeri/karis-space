@@ -46,5 +46,8 @@ before I finally decided to create my own website where I can customize everythi
 The website also includes an error page. 
 <img width="1863" height="944" alt="Screenshot 2025-07-28 171823" src="https://github.com/user-attachments/assets/a6cd9ecc-d35f-4514-b097-878aee4d407e" />
 
+# Discord support 
+Go into the discord folder, open the index.html and edit the invite links in line **4** and **10**
+
 
 
