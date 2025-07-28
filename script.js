@@ -162,6 +162,9 @@ const popupData = {
             <a href="https://www.instagram.com/kittypaw_nya/?next=%2F" target="_blank" class="popup-link-item">
                 <img src="assets/instagram.svg" alt="instagram"><span>instagram</span>
             </a>
+            <a href="https://github.com/xkaeri" target="_blank" class="popup-link-item">
+                <img src="assets/github.svg" alt="instagram"><span>github</span>
+            </a>
         </div>
         <div class="popup-links-note">clicking any of the links will open a new tab!</div>
         `
