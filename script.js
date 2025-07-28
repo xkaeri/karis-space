@@ -61,6 +61,8 @@ const popupContent = document.getElementById('popup-content');
 const popupClose = document.getElementById('popup-close');
 const navLinks = document.querySelectorAll('.nav-icons a');
 
+// TODO:  Add projecs to the work popup 
+
 const popupData = {
     about: {
         title: 'about me',
@@ -167,7 +169,7 @@ const popupData = {
             </div>
             <div class="skills-section-title">what i do</div>
             <div class="skills-list">
-                <span class="skills-chip">moderate your community</span>
+                <span class="skills-chip">Lorem ipsum dolor sit amet</span>
             </div>
             <div class="skills-note">Just send me an email, if you'd like to talk about what else I can do for you.</div>
         </div>
