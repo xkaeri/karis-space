@@ -212,19 +212,6 @@ main {
     font-weight: 700;
     text-shadow: 0 2px 8px #fffbe6;
 }
-.wave {
-    display: inline-block;
-    animation: wave 1.5s infinite;
-    transform-origin: 70% 70%;
-}
-@keyframes wave {
-    0%, 60%, 100% { transform: rotate(0deg); }
-    10% { transform: rotate(14deg); }
-    20% { transform: rotate(-8deg); }
-    30% { transform: rotate(14deg); }
-    40% { transform: rotate(-4deg); }
-    50% { transform: rotate(10deg); }
-}
 .subtitle {
     color: #ad809a;
     font-size: 1.7rem;
