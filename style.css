@@ -29,34 +29,6 @@ body {
     pointer-events: none;
 }
 
-.wave-bg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 45vh;
-    z-index: 1;
-    background: none;
-    color: #C19FB3;
-    pointer-events: none;
-    animation: waveMove 2.2s cubic-bezier(0.4,1.6,0.6,1) infinite alternate;
-}
-
-@keyframes waveMove {
-    0% {
-        transform: translateY(0) scaleY(1.05) scaleX(1.04);
-        filter: blur(0.5px) brightness(1.05);
-    }
-    50% {
-        transform: translateY(-18px) scaleY(1.18) scaleX(1.08);
-        filter: blur(1.5px) brightness(1.12);
-    }
-    100% {
-        transform: translateY(0) scaleY(1.05) scaleX(1.04);
-        filter: blur(0.5px) brightness(1.05);
-    }
-}
-
 /* Add pastel floating shapes for extra cuteness */
 .cute-bg-shape {
     position: fixed;
