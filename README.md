@@ -9,16 +9,27 @@
 
 # Features
 ``about popup``
+
 <img width="837" height="636" alt="image" src="https://github.com/user-attachments/assets/b6af47ce-4aba-40cd-beb6-89b5bb80e67e" />
+
 ``links popup``
+
 <img width="591" height="499" alt="image" src="https://github.com/user-attachments/assets/3b8d4062-c884-4d49-af28-7ab7af95a0d0" />
+
 ``work popup``
+
 <img width="972" height="626" alt="image" src="https://github.com/user-attachments/assets/268ba5fa-c6d0-48ac-8df7-b6f0e64ffc60" />
+
 ``faq popup``
+
 <img width="593" height="631" alt="image" src="https://github.com/user-attachments/assets/e50adcd3-61f4-45d7-b52f-7d6aa49bd1ce" />
+
 the faq questions can be clicked on
+
 <img width="852" height="326" alt="image" src="https://github.com/user-attachments/assets/7007e14d-4e5c-48af-b342-5640e6a4097c" />
+
 ``contact popup``
+
 <img width="545" height="611" alt="image" src="https://github.com/user-attachments/assets/6751c1e4-c0d5-4937-a98c-e1147589a3a1" />
 
 # Process
