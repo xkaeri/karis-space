@@ -52,6 +52,12 @@
                 contentDiv.className = 'diary-content';
                 contentDiv.textContent = entry.content;
                 
+                // Add click handler
+                dateDiv.addEventListener('click', () => {
+                    dateDiv.classList.toggle('active');
+                    contentDiv.classList.toggle('show');
+                });
+                
                 entryElement.appendChild(dateDiv);
                 entryElement.appendChild(contentDiv);
                 container.appendChild(entryElement);
