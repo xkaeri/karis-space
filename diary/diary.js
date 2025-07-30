@@ -12,6 +12,11 @@ const diaryEntries = [
 
 function loadDiaryEntries() {
     const container = document.querySelector('.diary-entries');
+    if (!container) {
+        console.error('Could not find diary-entries container');
+        return;
+    }
+    
     container.innerHTML = ''; // Clear existing entries
     
     // Sort entries by date in reverse order (newest first)
@@ -22,22 +27,33 @@ function loadDiaryEntries() {
     sortedEntries.forEach(entry => {
         const entryElement = document.createElement('div');
         entryElement.className = 'diary-entry';
-        entryElement.innerHTML = `
-            <div class="diary-date">${entry.date}</div>
-            <div class="diary-content">${entry.content}</div>
-        `;
-
-        const dateElement = entryElement.querySelector('.diary-date');
-        const contentElement = entryElement.querySelector('.diary-content');
-
-        dateElement.addEventListener('click', () => {
-            dateElement.classList.toggle('active');
-            contentElement.classList.toggle('show');
+        
+        // Create the date element
+        const dateDiv = document.createElement('div');
+        dateDiv.className = 'diary-date';
+        dateDiv.textContent = entry.date;
+        
+        // Create the content element
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'diary-content';
+        contentDiv.textContent = entry.content;
+        
+        // Add click handler
+        dateDiv.addEventListener('click', () => {
+            dateDiv.classList.toggle('active');
+            contentDiv.classList.toggle('show');
         });
-
+        
+        // Append elements
+        entryElement.appendChild(dateDiv);
+        entryElement.appendChild(contentDiv);
         container.appendChild(entryElement);
     });
 }
 
-// Load entries when page loads
-document.addEventListener('DOMContentLoaded', loadDiaryEntries);
+// Make sure the DOM is loaded before running the script
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadDiaryEntries);
+} else {
+    loadDiaryEntries();
+}
