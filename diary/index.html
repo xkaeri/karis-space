@@ -19,9 +19,50 @@
     </main>
     <script>
         console.log('Page loaded');
-        window.onerror = function(msg, url, line) {
-            console.error(`Error: ${msg}\nURL: ${url}\nLine: ${line}`);
-        };
+        
+        const diaryEntries = [
+            {
+                date: "July 30, 2025",
+                content: "Today I worked on my website and added a diary page! I'm excited to share more entries here..."
+            },
+            {
+                date: "July 29, 2025",
+                content: "No entry today, just relaxing and enjoying some time off."
+            }
+        ];
+
+        function loadDiaryEntries() {
+            const container = document.querySelector('.diary-entries');
+            
+            const sortedEntries = [...diaryEntries].sort((a, b) => 
+                new Date(b.date) - new Date(a.date)
+            );
+
+            sortedEntries.forEach(entry => {
+                const entryElement = document.createElement('div');
+                entryElement.className = 'diary-entry';
+                
+                const dateDiv = document.createElement('div');
+                dateDiv.className = 'diary-date';
+                dateDiv.textContent = entry.date;
+                
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'diary-content';
+                contentDiv.textContent = entry.content;
+                
+                dateDiv.addEventListener('click', () => {
+                    dateDiv.classList.toggle('active');
+                    contentDiv.classList.toggle('show');
+                });
+                
+                entryElement.appendChild(dateDiv);
+                entryElement.appendChild(contentDiv);
+                container.appendChild(entryElement);
+            });
+        }
+
+        // Run when page loads
+        document.addEventListener('DOMContentLoaded', loadDiaryEntries);
     </script>
     <script src="diary.js"></script>
 </body>
