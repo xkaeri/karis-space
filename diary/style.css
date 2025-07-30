@@ -12,28 +12,51 @@
 .diary-entry {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     box-shadow: 0 2px 8px rgba(193, 159, 179, 0.2);
-    transition: transform 0.2s;
-}
-
-.diary-entry:hover {
-    transform: translateY(-2px);
+    overflow: hidden;
 }
 
 .diary-date {
-    color: #ad809a;
+    color: #000;  /* Changed from #ad809a to #000 for black text */
     font-weight: bold;
     font-size: 1.1em;
-    margin-bottom: 0.8rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.diary-date:hover {
+    background-color: rgba(193, 159, 179, 0.1);
+}
+
+.diary-date::after {
+    content: '▼';
+    float: right;
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.diary-date.active::after {
+    transform: rotate(0);
 }
 
 .diary-content {
-    color: #444;
+    color: #000;  /* Changed from #444 to #000 for black text */
     line-height: 1.6;
     font-size: 1.05em;
     white-space: pre-wrap;
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    border-top: 1px solid rgba(193, 159, 179, 0.2);
+}
+
+.diary-content.show {
+    padding: 1.5rem;
+    max-height: 1000px;
 }
 
 .navbar {

@@ -26,6 +26,15 @@ function loadDiaryEntries() {
             <div class="diary-date">${entry.date}</div>
             <div class="diary-content">${entry.content}</div>
         `;
+
+        const dateElement = entryElement.querySelector('.diary-date');
+        const contentElement = entryElement.querySelector('.diary-content');
+
+        dateElement.addEventListener('click', () => {
+            dateElement.classList.toggle('active');
+            contentElement.classList.toggle('show');
+        });
+
         container.appendChild(entryElement);
     });
 }
