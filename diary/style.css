@@ -1,0 +1,31 @@
+.diary-container {
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.diary-card {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.diary-entry {
+    padding: 1.5rem;
+    margin: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(193, 159, 179, 0.2);
+}
+
+.diary-date {
+    color: #ad809a;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.diary-content {
+    color: #444;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
