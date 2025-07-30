@@ -5,27 +5,41 @@
     margin: 0 auto;
 }
 
-.diary-card {
-    margin-top: 2rem;
-    padding-bottom: 2rem;
+.diary-entries {
+    padding: 1rem;
 }
 
 .diary-entry {
-    padding: 1.5rem;
-    margin: 1rem;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
     box-shadow: 0 2px 8px rgba(193, 159, 179, 0.2);
+    transition: transform 0.2s;
+}
+
+.diary-entry:hover {
+    transform: translateY(-2px);
 }
 
 .diary-date {
     color: #ad809a;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    font-size: 1.1em;
+    margin-bottom: 0.8rem;
 }
 
 .diary-content {
     color: #444;
     line-height: 1.6;
+    font-size: 1.05em;
     white-space: pre-wrap;
+}
+
+.navbar {
+    background: #C19FB3;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px 12px 0 0;
+    font-weight: bold;
 }

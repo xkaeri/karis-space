@@ -8,12 +8,18 @@ const diaryEntries = [
         date: "July 29, 2025",
         content: "No entry today, just relaxing and enjoying some time off."
     }
-    // Add more entries here in the same format
 ];
 
 function loadDiaryEntries() {
     const container = document.querySelector('.diary-entries');
-    diaryEntries.reverse().forEach(entry => {
+    container.innerHTML = ''; // Clear existing entries
+    
+    // Sort entries by date in reverse order (newest first)
+    const sortedEntries = [...diaryEntries].sort((a, b) => 
+        new Date(b.date) - new Date(a.date)
+    );
+
+    sortedEntries.forEach(entry => {
         const entryElement = document.createElement('div');
         entryElement.className = 'diary-entry';
         entryElement.innerHTML = `
@@ -24,4 +30,5 @@ function loadDiaryEntries() {
     });
 }
 
+// Load entries when page loads
 document.addEventListener('DOMContentLoaded', loadDiaryEntries);
