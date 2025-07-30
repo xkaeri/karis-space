@@ -11,11 +11,13 @@ const diaryEntries = [
 ];
 
 function loadDiaryEntries() {
+    console.log('Loading diary entries...');
     const container = document.querySelector('.diary-entries');
     if (!container) {
         console.error('Could not find diary-entries container');
         return;
     }
+    console.log('Found container:', container);
     
     container.innerHTML = ''; // Clear existing entries
     
@@ -51,9 +53,6 @@ function loadDiaryEntries() {
     });
 }
 
-// Make sure the DOM is loaded before running the script
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadDiaryEntries);
-} else {
-    loadDiaryEntries();
-}
+// Make sure the script runs
+console.log('Diary script loaded');
+document.addEventListener('DOMContentLoaded', loadDiaryEntries);
