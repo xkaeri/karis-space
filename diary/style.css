@@ -182,4 +182,25 @@
     .background-decor {
         opacity: 0.6;  /* Reduce background opacity on mobile */
     }
+
+    .mobile-notice {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(193, 159, 179, 0.95);
+        color: white;
+        padding: 8px;
+        text-align: center;
+        font-size: 0.9rem;
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Adjust main container to account for notice */
+    .diary-container {
+        padding-top: 40px;  /* Height of notice */
+    }
 }
