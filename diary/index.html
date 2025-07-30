@@ -17,6 +17,12 @@
             <div class="diary-entries"></div>
         </div>
     </main>
-    <script src="./diary.js"></script>
+    <script>
+        console.log('Page loaded');
+        window.onerror = function(msg, url, line) {
+            console.error(`Error: ${msg}\nURL: ${url}\nLine: ${line}`);
+        };
+    </script>
+    <script src="diary.js"></script>
 </body>
 </html>
