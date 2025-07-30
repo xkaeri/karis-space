@@ -109,17 +109,41 @@
 /* Mobile responsive styles */
 @media screen and (max-width: 768px) {
     .diary-container {
-        padding: 1rem;
+        padding: 0;
         max-width: 100%;
         margin: 0;
-        height: 100vh;  /* Full height on mobile */
+        height: 100vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
     }
 
     .card {
         margin: 0;
         border-radius: 0;
-        background: rgba(255, 255, 255, 0.9);  /* More opaque background */
-        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .diary-entries {
+        flex: 1;
+        overflow-y: auto;
+        padding-bottom: 4rem; /* Add some padding at the bottom */
+    }
+
+    /* Custom scrollbar for mobile */
+    .diary-entries::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .diary-entries::-webkit-scrollbar-track {
+        background: rgba(193, 159, 179, 0.1);
+    }
+
+    .diary-entries::-webkit-scrollbar-thumb {
+        background: #C19FB3;
+        border-radius: 4px;
     }
 
     .diary-entry {
