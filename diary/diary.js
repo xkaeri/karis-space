@@ -11,17 +11,15 @@ const diaryEntries = [
 ];
 
 function loadDiaryEntries() {
-    console.log('Loading diary entries...');
+    console.log('Loading diary entries...'); // Debug log
     const container = document.querySelector('.diary-entries');
     if (!container) {
         console.error('Could not find diary-entries container');
         return;
     }
-    console.log('Found container:', container);
     
-    container.innerHTML = ''; // Clear existing entries
+    container.innerHTML = '';
     
-    // Sort entries by date in reverse order (newest first)
     const sortedEntries = [...diaryEntries].sort((a, b) => 
         new Date(b.date) - new Date(a.date)
     );
@@ -30,29 +28,30 @@ function loadDiaryEntries() {
         const entryElement = document.createElement('div');
         entryElement.className = 'diary-entry';
         
-        // Create the date element
         const dateDiv = document.createElement('div');
         dateDiv.className = 'diary-date';
         dateDiv.textContent = entry.date;
         
-        // Create the content element
         const contentDiv = document.createElement('div');
         contentDiv.className = 'diary-content';
         contentDiv.textContent = entry.content;
         
-        // Add click handler
         dateDiv.addEventListener('click', () => {
             dateDiv.classList.toggle('active');
             contentDiv.classList.toggle('show');
         });
         
-        // Append elements
         entryElement.appendChild(dateDiv);
         entryElement.appendChild(contentDiv);
         container.appendChild(entryElement);
     });
 }
 
-// Make sure the script runs
-console.log('Diary script loaded');
-document.addEventListener('DOMContentLoaded', loadDiaryEntries);
+// Ensure the script runs after DOM is loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadDiaryEntries);
+} else {
+    loadDiaryEntries();
+}
+
+console.log('Diary script loaded'); // Debug log
