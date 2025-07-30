@@ -26,10 +26,10 @@
 }
 
 .diary-date {
-    color: #000;  /* Changed from #ad809a to #000 for black text */
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #fff;
     cursor: pointer;
     transition: background-color 0.2s;
     user-select: none;
