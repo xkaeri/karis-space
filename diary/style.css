@@ -12,16 +12,24 @@
 .diary-entry {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     box-shadow: 0 2px 8px rgba(193, 159, 179, 0.2);
     overflow: hidden;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.diary-entry:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
 }
 
 .diary-date {
     color: #000;  /* Changed from #ad809a to #000 for black text */
+    font-size: 1.3rem;
     font-weight: bold;
-    font-size: 1.1em;
-    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
     cursor: pointer;
     transition: background-color 0.2s;
     user-select: none;

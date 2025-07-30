@@ -26,19 +26,19 @@
                 content: "Today I worked on my website and added a diary page! I'm excited to share more entries here..."
             },
             {
-                date: "July 29, 2025",
-                content: "No entry today, just relaxing and enjoying some time off."
+
             }
         ];
 
         function loadDiaryEntries() {
             const container = document.querySelector('.diary-entries');
+            container.innerHTML = ''; // Clear existing entries
             
             const sortedEntries = [...diaryEntries].sort((a, b) => 
                 new Date(b.date) - new Date(a.date)
             );
 
-            sortedEntries.forEach(entry => {
+            sortedEntries.forEach((entry, index) => {
                 const entryElement = document.createElement('div');
                 entryElement.className = 'diary-entry';
                 
@@ -49,11 +49,6 @@
                 const contentDiv = document.createElement('div');
                 contentDiv.className = 'diary-content';
                 contentDiv.textContent = entry.content;
-                
-                dateDiv.addEventListener('click', () => {
-                    dateDiv.classList.toggle('active');
-                    contentDiv.classList.toggle('show');
-                });
                 
                 entryElement.appendChild(dateDiv);
                 entryElement.appendChild(contentDiv);
