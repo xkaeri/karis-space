@@ -3,6 +3,10 @@ const diaryEntries = [
     {
         date: "July 30, 2025",
         content: "Today I worked on my website and added a diary page! I'm excited to share more entries here..."
+    },
+    {
+        date: "July 29, 2025",
+        content: "No entry today, just relaxing and enjoying some time off."
     }
     // Add more entries here in the same format
 ];
