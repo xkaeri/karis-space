@@ -68,7 +68,7 @@ const popupData = {
         title: 'about me',
         content: `
         <div class="popup-profile">
-            <img src="assets/avatar.jpeg" alt="avatar" class="popup-avatar">
+            <img src="assets/avatar.gif" alt="avatar" class="popup-avatar">
             <div>
                 <div class="popup-title-main">Kari <span style="font-size:1.2rem; color:#ffa726;"></span></div>
                 <div class="popup-title-sub">Student and Teenager</div>
