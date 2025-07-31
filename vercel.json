@@ -1,15 +1,15 @@
 {
   "redirects": [
     {
-      "source": "/diary",
-      "destination": "/diary/",
+      "source": "/entry",
+      "destination": "/entry/",
       "permanent": true
     }
   ],
   "rewrites": [
     {
-      "source": "/diary",
-      "destination": "/diary/index.html"
+      "source": "/entry",
+      "destination": "/entry/index.html"
     }
   ],
   "cleanUrls": true,

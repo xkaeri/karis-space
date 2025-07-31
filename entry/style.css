@@ -5,6 +5,8 @@
     margin: 0 auto;
     max-height: 90vh; /* 90% of viewport height */
     overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    gap: 2rem;
 }
 
 /* Add custom scrollbar styling */
@@ -23,7 +25,7 @@
 }
 
 .diary-entries {
-    padding: 1rem;
+    padding: 1.5rem;
     padding-bottom: 0; /* Remove bottom padding */
 }
 
@@ -31,15 +33,15 @@
     background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
     margin-bottom: 1rem; /* Reduce from 2rem to 1rem */
-    box-shadow: 0 2px 8px rgba(193, 159, 179, 0.2);
+    box-shadow: 0 2px 8px rgba(48, 59, 91, 0.5);  /* Increased opacity to 0.5 for stronger glow */
     overflow: hidden;
     font-size: 1.1rem;
-    padding: 0.5rem;
-    border-bottom: 0px solid rgba(255, 255, 255, 0.1);
+    padding: 0.7rem;
+    border-bottom: 0px solid rgba(48, 59, 91, 0.5);
 }
 
 .diary-entry:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: #cdd6dd; 
     border-radius: 8px;
 }
 
@@ -47,7 +49,7 @@
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
-    color: black;
+    color: #343c5c;
     cursor: pointer;
     transition: background-color 0.2s;
     user-select: none;
@@ -86,7 +88,7 @@
 }
 
 .navbar {
-    background: #C19FB3;
+    background: #303b5b;
     color: white;
     padding: 1rem 1.5rem;
     border-radius: 12px 12px 0 0;
@@ -105,6 +107,67 @@
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.8;  /* You can adjust this value to make the background more/less visible */
+}
+
+.comments-sidebar {
+  position: fixed;
+  top: 21rem;
+  left: 2rem;
+  width: 200px;
+  min-width: 250px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 1em;
+  height: fit-content;
+  box-shadow: 0 2px 8px rgba(48, 59, 91, 0.5);
+  z-index: 10; /* Make sure it sits above background elements */
+}
+
+.comments-header {
+    font-weight: bold;
+    color: #303b5b;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(48, 59, 91, 0.2);
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+    padding: 0.5rem;
+    border: 1px solid rgba(48, 59, 91, 0.2);
+    border-radius: 4px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.comment-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.comment-form button {
+    background: #303b5b;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.comment-form button:hover {
+    background: #404c6b;
+}
+
+.comments-list {
+    margin-bottom: 1rem;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 /* Mobile responsive styles */
@@ -219,5 +282,15 @@
     /* Adjust container padding to account for floating notice */
     .diary-container {
         padding-top: 70px;
+    }
+
+    .diary-container {
+        flex-direction: column;
+    }
+
+    .comments-sidebar {
+        width: 100%;
+        min-width: 0;
+        margin-top: 1rem;
     }
 }

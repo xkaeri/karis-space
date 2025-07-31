@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kari's entries</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">  <!-- Make sure this points to diary/style.css -->
+    <link rel="icon" href="../assets/icon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-notice">Mobile: This page is best viewed on desktop or in desktop view 💕</div>
+    <div class="background-decor"></div>
+    <main class="diary-container">
+        <div class="card cute-shadow">
+            <nav class="navbar">my entries</nav>
+            <div class="diary-entries"></div>
+        </div>
+        <div class="comments-sidebar">
+            <div class="comments-header">visitor comments</div>
+            <div class="comments-list"></div>
+            <form class="comment-form">
+                <input type="text" id="visitorName" placeholder="your name" required>
+                <textarea id="commentText" placeholder="leave a message..." required></textarea>
+                <button type="submit">send 💌</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        console.log('Page loaded');
+         
+        // add new diary entries here
+        const diaryEntries = [
+            {
+                date: "July 30, 2025",
+                content: "Today I decided to add an diary section to the website. I think its a cool idea to talk here about how im doing and what is going on, its more an blog & diary mix that i'd like to constantly keep updated. I hope you like it! :)"
+            },
+            {
+                date: "July 31, 2025",
+                content: "I woke up pretty late today, around 2pm. I slept pretty early around 2am which is pretty early for me. I didn't really eat breakfast besides like an apple but thats usually enough for me. Besides that I've been working on my website and the diary page. I also met many cool and new people on this new discord server I joined and hope to make friends there."
+            },
+        ];
+
+        // Move comments array outside of function
+        const comments = [];
+
+        const ADMIN_CONFIG = {
+            passwordHash: "your-hashed-password-here" // Use hashPassword("your-password") to generate this
+        };
+
+        function loadDiaryEntries() {
+            const container = document.querySelector('.diary-entries');
+            container.innerHTML = ''; // Clear existing entries
+            
+            const sortedEntries = [...diaryEntries].sort((a, b) => 
+                new Date(b.date) - new Date(a.date)
+            );
+
+            sortedEntries.forEach((entry, index) => {
+                const entryElement = document.createElement('div');
+                entryElement.className = 'diary-entry';
+                
+                const dateDiv = document.createElement('div');
+                dateDiv.className = 'diary-date';
+                dateDiv.textContent = entry.date;
+                
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'diary-content';
+                contentDiv.textContent = entry.content;
+                
+                // Add click handler
+                dateDiv.addEventListener('click', () => {
+                    dateDiv.classList.toggle('active');
+                    contentDiv.classList.toggle('show');
+                });
+                
+                entryElement.appendChild(dateDiv);
+                entryElement.appendChild(contentDiv);
+                container.appendChild(entryElement);
+            });
+        }
+
+        function handleCommentSubmit(event) {
+            event.preventDefault();
+            
+            const nameInput = document.getElementById('visitorName');
+            const commentInput = document.getElementById('commentText');
+            
+            const newComment = {
+                name: nameInput.value,
+                comment: commentInput.value,
+                date: new Date().toLocaleDateString()
+            };
+            
+            comments.unshift(newComment);
+            displayComments();
+            saveComments(); // Add this to persist comments
+            
+            // Clear form
+            nameInput.value = '';
+            commentInput.value = '';
+        }
+
+        function displayComments() {
+            const commentsContainer = document.querySelector('.comments-list');
+            commentsContainer.innerHTML = comments.map((comment, index) => `
+                <div class="comment" style="margin-bottom: 1rem; padding: 0.5rem; background: rgba(48, 59, 91, 0.1); border-radius: 4px; position: relative;">
+                    <div style="font-weight: bold; color: #303b5b;">${comment.name}</div>
+                    <div style="margin-top: 0.25rem;">${comment.comment}</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-top: 0.25rem;">${comment.date}</div>
+                    <button onclick="attemptDeleteComment(${index})" 
+                            style="position: absolute; top: 0.5rem; right: 0.5rem; 
+                                   background: none; border: none; color: #303b5b; 
+                                   cursor: pointer; font-size: 0.8rem; padding: 0.2rem;">
+                        🗑️
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        // Add localStorage support
+        function saveComments() {
+            localStorage.setItem('diaryComments', JSON.stringify(comments));
+        }
+
+        function loadComments() {
+            const saved = localStorage.getItem('diaryComments');
+            if (saved) {
+                comments.push(...JSON.parse(saved));
+                displayComments();
+            }
+        }
+
+        function attemptDeleteComment(index) {
+            const password = prompt("Enter admin password to delete comment:");
+            if (password === "KariIsTheAlpha") { // Change this to your desired password
+                comments.splice(index, 1);
+                displayComments();
+                saveComments();
+            } else {
+                alert("Incorrect password. Only the admin can delete comments.");
+            }
+        }
+
+        // For better security, add this function to hash the password
+        function hashPassword(password) {
+            return btoa(password); // Basic encoding, you might want to use a more secure method
+        }
+
+        // Initialize everything when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDiaryEntries();
+            loadComments();
+            document.querySelector('.comment-form').addEventListener('submit', handleCommentSubmit);
+        });
+    </script>
+</body>
+</html>
