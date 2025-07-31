@@ -162,10 +162,10 @@ const popupData = {
                 </div>
             </div>
             <div class="skills-title" style="margin-top:2em;">my work!</div>
-            <div class="skills-desc">Projexrs</div>
+            <div class="skills-desc">Projects</div>
             <div class="skills-gallery" id="work-gallery" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; align-items: center; margin-top: 1.5em;">
                 <span class="skills-note" style="min-width:220px; text-align:center;">This Website</span>
-                <span class="skills-note" style="min-width:220px; text-align:center;">TBA</span>
+                <span class="skills-note" style="min-width:220px; text-align:center;">My entry page at <a href="https://kuninaru.com/entry"</span>
             </div>
             <div class="skills-section-title">what i do</div>
             <div class="skills-list">
