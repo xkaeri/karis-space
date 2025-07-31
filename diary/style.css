@@ -23,7 +23,7 @@
 }
 
 .diary-entries {
-    padding: 1rem;
+    padding: 0rem;
     padding-bottom: 0; /* Remove bottom padding */
 }
 
@@ -34,7 +34,7 @@
     box-shadow: 0 2px 8px rgba(193, 159, 179, 0.2);
     overflow: hidden;
     font-size: 1.1rem;
-    padding: 1rem;
+    padding: 0rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
