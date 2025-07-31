@@ -34,8 +34,8 @@
     box-shadow: 0 2px 8px rgba(193, 159, 179, 0.2);
     overflow: hidden;
     font-size: 1.1rem;
-    padding: 0rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
 }
 
 .diary-entry:hover {
