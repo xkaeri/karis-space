@@ -247,14 +247,6 @@ main {
     height: 48px;
     margin-bottom: 0.3rem;
 }
-.frog-icon {
-    position: absolute;
-    right: 2.5rem;
-    bottom: 2.5rem;
-    width: 80px;
-    z-index: 1;
-    animation: bounce 2s infinite;
-}
 .star-icon {
     position: fixed;
     right: 1.2rem;
