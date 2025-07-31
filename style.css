@@ -7,7 +7,7 @@
 }
 body {
     font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
-    background: url('assets/main-bg.png') no-repeat center center fixed;
+    background: url('assets/backgrounds/main-bg5.gif') no-repeat center center fixed;
     background-size: cover;
     position: relative;
     min-height: 100vh;
