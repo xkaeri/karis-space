@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/diary",
+      "destination": "/diary/index.html",
+      "permanent": true
+    }
+  ],
+  "cleanUrls": true
+}
