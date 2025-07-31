@@ -24,12 +24,13 @@
 
 .diary-entries {
     padding: 1rem;
+    padding-bottom: 0; /* Remove bottom padding */
 }
 
 .diary-entry {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem; /* Reduce from 2rem to 1rem */
     box-shadow: 0 2px 8px rgba(193, 159, 179, 0.2);
     overflow: hidden;
     font-size: 1.1rem;
@@ -141,7 +142,7 @@
         flex: 1;
         overflow-y: auto;
         padding: 1rem;
-        padding-bottom: calc(env(safe-area-inset-bottom) + 2rem); /* For devices with home indicator */
+        padding-bottom: 1rem; /* Reduce bottom padding on mobile */
         -webkit-overflow-scrolling: touch;
     }
 
