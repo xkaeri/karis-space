@@ -2,9 +2,16 @@
   "redirects": [
     {
       "source": "/diary",
-      "destination": "/diary/index.html",
+      "destination": "/diary/",
       "permanent": true
     }
   ],
-  "cleanUrls": true
+  "rewrites": [
+    {
+      "source": "/diary",
+      "destination": "/diary/index.html"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": true
 }
