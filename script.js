@@ -263,7 +263,7 @@ const popupData = {
                 <div class="friend-item">
             <img src="assets/avatars/lemi.png" alt="Friend 3" class="friend-avatar">
             <div class="friend-info">
-                <div class="friend-name">TBA</div>
+                <div class="friend-name">Lemi</div>
                 <div class="friend-role">Close Friend</div><br>
                 <div class="friend-note">A person who is very funny, kind and awesome. She is a great person and also a great artist, 
                 I really like her as a person and will always hold her in high regards.</div>
