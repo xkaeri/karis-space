@@ -240,7 +240,7 @@ const popupData = {
             <div class="friend-info">
                 <div class="friend-name">asuyi</div>
                 <div class="friend-role">My best friend</div><br>
-                <div class=friend-note>The person who has helped me through everything and has stayed by my side while others left me, I think without her I would have already long fully left social media.</div><br>
+                <div class=friend-note>The person who has helped me through everything and has stayed by my side while others left me.<br>I think without her I would have already long fully left social media.</div><br>
             </div>
         </div>
         <div class="friend-item">
