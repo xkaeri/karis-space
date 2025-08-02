@@ -255,7 +255,7 @@ const popupData = {
             <img src="assets/avatars/sam.png" alt="Friend 3" class="friend-avatar">
             <div class="friend-info">
                 <div class="friend-name">Samlami</div>
-                <div class="friend-role">Twin</div>
+                <div class="friend-role">Twin</div><br>
                 <div class="friend-note">My twin who is one of the nicest and kindest person, that i've ever met. I would forever be grateful for having her in my life</div>
             </div>
         </div>
@@ -263,7 +263,7 @@ const popupData = {
             <img src="assets/avatars/lemi.png" alt="Friend 3" class="friend-avatar">
             <div class="friend-info">
                 <div class="friend-name">TBA</div>
-                <div class="friend-role">Close Friend</div>
+                <div class="friend-role">Close Friend</div><br>
                 <div class="friend-note">A person who is very funny, kind and awesome. She is a great person and also a great artist, I really like her as a person and will always hold her in high regards.</div>
             </div>
         </div>
