@@ -240,7 +240,7 @@ const popupData = {
             <div class="friend-info">
                 <div class="friend-name">asuyi</div>
                 <div class="friend-role">My best friend</div><br>
-                <div class=friend-note>She is the bestest friend ever! I love her so much! 💖</div><br>
+                <div class=friend-note>The person who has helped me through everything and has stayed by my side while others left me, I think without her I would have already long fully left social media.</div><br>
             </div>
         </div>
         <div class="friend-item">
@@ -248,28 +248,31 @@ const popupData = {
             <div class="friend-info">
                 <div class="friend-name">Phantom</div>
                 <div class="friend-role">My bro</div><br>
-                <div class="friend-role">A fun person to be around who is almost like my brother just without the blood relationship</div><br>
+                <div class="friend-note">A fun person to be around who is almost like my brother just without the blood relationship</div><br>
             </div>
         </div>
         <div class="friend-item">
-            <img src="assets/avatars/.png" alt="Friend 3" class="friend-avatar">
+            <img src="assets/avatars/sam.png" alt="Friend 3" class="friend-avatar">
+            <div class="friend-info">
+                <div class="friend-name">Samlami</div>
+                <div class="friend-role">Twin</div>
+                <div class="friend-note">My twin who is one of the nicest and kindest person, that i've ever met. I would forever be grateful for having her in my life</div>
+            </div>
+        </div>
+                <div class="friend-item">
+            <img src="assets/avatars/lemi.png" alt="Friend 3" class="friend-avatar">
             <div class="friend-info">
                 <div class="friend-name">TBA</div>
-                <div class="friend-role">Another fun person to be around</div>
+                <div class="friend-role">Close Friend</div>
+                <div class="friend-note">A person who is very funny, kind and awesome. She is a great person and also a great artist, I really like her as a person and will always hold her in high regards.</div>
             </div>
         </div>
                 <div class="friend-item">
             <img src="assets/avatars/.png" alt="Friend 3" class="friend-avatar">
             <div class="friend-info">
                 <div class="friend-name">TBA</div>
-                <div class="friend-role">Another fun person to be around</div>
-            </div>
-        </div>
-                <div class="friend-item">
-            <img src="assets/avatars/.png" alt="Friend 3" class="friend-avatar">
-            <div class="friend-info">
-                <div class="friend-name">TBA</div>
-                <div class="friend-role">Another fun person to be around</div>
+                <div class="friend-role">Close Friend</div>
+                <div class="friend-note">Another fun person to be around</div>
             </div>
         </div>
         <div class="friends-note" style="margin-top:1.5em; text-align:center;">
