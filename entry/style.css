@@ -185,20 +185,20 @@
     .diary-container {
         padding: 0;
         width: 100%;
-        height: 100vh; /* Fallback */
+        height: 75vh; /* Fallback */
         height: -webkit-fill-available;
-        display: flex;
+        display: small-flex;
         flex-direction: column;
     }
 
     .card {
         margin: 0;
         border-radius: 0;
-        background: rgba(255, 255, 255, 0.9);
+        background: none;
         flex: 1;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 30%;
     }
 
     .diary-entries {
@@ -219,7 +219,7 @@
     .diary-date {
         font-size: 1.1rem;
         padding: 0.5rem;
-        color: #000;  /* Change text color to black */
+        color: #343c5c;  /* Change text color to black */
         background: rgba(193, 159, 179, 0.2);  /* Light background for dates */
         border-radius: 4px;
     }
@@ -231,8 +231,8 @@
     }
 
     .diary-content.show {
-        padding: 1rem;
-        background: #fff;  /* White background for content */
+        padding: 0.7rem;
+        background: rgba(255, 255, 255, 0.95);  /* White background for content */
     }
 
     .navbar {
@@ -240,8 +240,7 @@
         top: 0;
         z-index: 1;
         padding: max(0.8rem, env(safe-area-inset-top));
-        background: rgba(193, 159, 179, 0.95);
-        color: #303b5b
+        background: rgba(48, 59, 91, 0.9);
     }
 
     .background-decor {
@@ -249,9 +248,9 @@
     }
 
     .mobile-notice {
-        display: block;
+        display: hidden;
         position: fixed;
-        top: 15px;
+        top: 10px;
         left: 50%;
         transform: translateX(-50%);
         background: rgba(193, 159, 179, 0.95);
@@ -264,9 +263,10 @@
         border-radius: 25px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         max-width: 85%;
-        width: auto;
+        width: fit-content;
         border: 2px solid rgba(255, 255, 255, 0.3);
         animation: floatIn 0.3s ease-out;
+        display: none;
     }
 
     @keyframes floatIn {
@@ -282,7 +282,7 @@
 
     /* Adjust container padding to account for floating notice */
     .diary-container {
-        padding-top: 70px;
+        padding-top: 210px;
     }
 
     .diary-container {
@@ -290,8 +290,10 @@
     }
 
     .comments-sidebar {
-        width: 20%;
+        width: 50%;
+        height: 25%;
         min-width: 0;
         margin-top: 1rem;
+        display: none;
     }
 }

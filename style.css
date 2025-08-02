@@ -1062,3 +1062,31 @@ body.dark .subtitle {
 body.dark .copyright {
     color: #aaa;
 }
+.friend-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background: #d5becc;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.friend-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+}
+.friend-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.friend-role {
+    font-size: 0.95rem;
+    color: #555;
+    font-weight: bold;
+
+}
+

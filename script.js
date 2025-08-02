@@ -68,7 +68,7 @@ const popupData = {
         title: 'about me',
         content: `
         <div class="popup-profile">
-            <img src="assets/avatar.gif" alt="avatar" class="popup-avatar">
+            <img src="assets/avatars/avatar.gif" alt="avatar" class="popup-avatar">
             <div>
                 <div class="popup-title-main">Kari <span style="font-size:1.2rem; color:#ffa726;"></span></div>
                 <div class="popup-title-sub">Student and Teenager</div>
@@ -230,6 +230,54 @@ const popupData = {
         </div>
         `
     },
+    // Add your friends here!
+    friends: {
+    title: 'friends',
+    content: `
+    <div class="friends-list">
+        <div class="friend-item">
+            <img src="assets/avatars/asuyi.png" alt="Friend 1" class="friend-avatar">
+            <div class="friend-info">
+                <div class="friend-name">asuyi</div>
+                <div class="friend-role">My best friend</div><br>
+                <div class=friend-note>She is the bestest friend ever! I love her so much! 💖</div><br>
+            </div>
+        </div>
+        <div class="friend-item">
+            <img src="assets/avatars/phantom.png" alt="Friend 2" class="friend-avatar">
+            <div class="friend-info">
+                <div class="friend-name">Phantom</div>
+                <div class="friend-role">My bro</div><br>
+                <div class="friend-role">A fun person to be around who is almost like my brother just without the blood relationship</div><br>
+            </div>
+        </div>
+        <div class="friend-item">
+            <img src="assets/avatars/.png" alt="Friend 3" class="friend-avatar">
+            <div class="friend-info">
+                <div class="friend-name">TBA</div>
+                <div class="friend-role">Another fun person to be around</div>
+            </div>
+        </div>
+                <div class="friend-item">
+            <img src="assets/avatars/.png" alt="Friend 3" class="friend-avatar">
+            <div class="friend-info">
+                <div class="friend-name">TBA</div>
+                <div class="friend-role">Another fun person to be around</div>
+            </div>
+        </div>
+                <div class="friend-item">
+            <img src="assets/avatars/.png" alt="Friend 3" class="friend-avatar">
+            <div class="friend-info">
+                <div class="friend-name">TBA</div>
+                <div class="friend-role">Another fun person to be around</div>
+            </div>
+        </div>
+        <div class="friends-note" style="margin-top:1.5em; text-align:center;">
+            Want to be on this list? Be my friend and maybe you’ll end up here too :3
+        </div>
+    </div>
+    `
+},
 
 };
 
