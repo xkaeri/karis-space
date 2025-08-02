@@ -240,7 +240,8 @@ const popupData = {
             <div class="friend-info">
                 <div class="friend-name">asuyi</div>
                 <div class="friend-role">My best friend</div><br>
-                <div class=friend-note>The person who has helped me through everything and has stayed by my side while others left me.<br>I think without her I would have already long fully left social media.</div><br>
+                <div class=friend-note>The person who has helped me through everything and has stayed by my side while others left me.
+                I think without her I would have already long fully left social media.</div><br>
             </div>
         </div>
         <div class="friend-item">
@@ -264,7 +265,8 @@ const popupData = {
             <div class="friend-info">
                 <div class="friend-name">TBA</div>
                 <div class="friend-role">Close Friend</div><br>
-                <div class="friend-note">A person who is very funny, kind and awesome. She is a great person and also a great artist, I really like her as a person and will always hold her in high regards.</div>
+                <div class="friend-note">A person who is very funny, kind and awesome. She is a great person and also a great artist, 
+                I really like her as a person and will always hold her in high regards.</div>
             </div>
         </div>
                 <div class="friend-item">
