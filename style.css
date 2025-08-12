@@ -1099,10 +1099,14 @@ body.dark .copyright {
 .friend-name {
     font-weight: bold;
     font-size: 1.1rem;
+    font-color: black
 }
 .friend-role {
     font-size: 0.95rem;
-    color: #555;
+    color: black;
     font-weight: bold;
 
+}
+.friend-note {
+    font-color: black
 }
