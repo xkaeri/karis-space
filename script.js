@@ -76,7 +76,7 @@ const popupData = {
         </div>
         <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
         <div style="margin-bottom:1.2em;">
-        hi! i'm kari. i...
+        Hi! I'm Yari. I...
         <ul>
             <li>love honkai star rail!</a></li>
             <li>do things</li>
