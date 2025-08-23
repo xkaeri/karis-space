@@ -370,7 +370,6 @@ body.dark .copyright-below {
     overflow: hidden;
     z-index: 1000;
     transition: box-shadow 0.2s;
-    resize: none; /* We'll handle resizing manually */
 }
 
 .popup-header {
@@ -388,7 +387,9 @@ body.dark .copyright-below {
     background: url('data:image/svg+xml;utf8,<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="18" x2="18" y2="0" stroke="gray" stroke-width="2"/><line x1="4" y1="18" x2="18" y2="4" stroke="gray" stroke-width="1"/></svg>') no-repeat center center;
     opacity: 0.7;
     z-index: 10;
+    display: none; /* Hide by default, show only for friends popup in JS */
 }
+
 @keyframes popupAppear {
     from { opacity: 0; transform: scale(0.9) translate(-50%, -30%); }
     to { opacity: 1; transform: scale(1) translate(-50%, -30%); }
