@@ -577,4 +577,35 @@ navLinks.forEach(link => {
     });
 });
 
+// Popup resizing logic
+const resizeHandle = document.getElementById('popup-resize-handle');
+let isResizing = false;
+let lastMouseX, lastMouseY, lastWidth, lastHeight;
+
+if (resizeHandle) {
+    resizeHandle.addEventListener('mousedown', function(e) {
+        isResizing = true;
+        lastMouseX = e.clientX;
+        lastMouseY = e.clientY;
+        lastWidth = popup.offsetWidth;
+        lastHeight = popup.offsetHeight;
+        document.body.style.userSelect = 'none';
+    });
+
+    window.addEventListener('mousemove', function(e) {
+        if (!isResizing) return;
+        const dx = e.clientX - lastMouseX;
+        const dy = e.clientY - lastMouseY;
+        popup.style.width = Math.max(250, lastWidth + dx) + 'px';
+        popup.style.height = Math.max(150, lastHeight + dy) + 'px';
+    });
+
+    window.addEventListener('mouseup', function() {
+        if (isResizing) {
+            isResizing = false;
+            document.body.style.userSelect = '';
+        }
+    });
+}
+
 
