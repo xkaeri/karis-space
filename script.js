@@ -355,9 +355,11 @@ header.addEventListener('mousedown', (e) => {
     dragOffsetX = e.clientX - rect.left;
     dragOffsetY = e.clientY - rect.top;
     document.body.style.userSelect = 'none';
-    // Fix the popup width/height to current pixel values to prevent auto-resize
-    popup.style.width = rect.width + 'px';
-    popup.style.height = rect.height + 'px';
+    // Only fix width/height for friends popup to prevent auto-resize
+    if (popupTitle.textContent.trim().toLowerCase() === 'friends') {
+        popup.style.width = rect.width + 'px';
+        popup.style.height = rect.height + 'px';
+    }
 });
 document.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
