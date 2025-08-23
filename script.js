@@ -372,6 +372,190 @@ document.addEventListener('mouseup', () => {
     document.body.style.userSelect = '';
 });
 
+function openPopup(type) {
+    // Common setup
+    popup.style.display = 'flex';
+    popupContent.innerHTML = ''; // Clear previous content
+    popupTitle.textContent = type.charAt(0).toUpperCase() + type.slice(1); // Capitalize first letter
+
+    // Specific settings for each popup type
+    if (type === 'about') {
+        popupContent.innerHTML = `
+            <div class="popup-profile">
+                <img src="assets/avatars/website-avatar.png" alt="avatar" class="popup-avatar">
+                <div>
+                    <div class="popup-title-main">Yuru <span style="font-size:1.2rem; color:#ffa726;"></span></div>
+                    <div class="popup-title-sub">Student and Teenager</div>
+                </div>
+            </div>
+            <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
+            <div style="margin-bottom:1.2em;">
+            Hi! I'm Yuruna, but you can call me Yuru. I...
+            <ul>
+                <li>love honkai star rail!</a></li>
+                <li>do things</li>
+                <li>am trying to learn how to code</li>
+            </ul>
+            <p><b>Curent Projects:</b>
+            <ul>
+            <li>This website</li>
+            </ul></p>
+            interested in working with me? send me an email at <a href="mailto:hi@sharyap.com">xkaeriiii@gmail.com</a>! :)
+            </div>
+            <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
+            <div class="about-education-block">
+                <div class="about-education-title">EDUCATION</div>
+                <div class="about-education-main">Intermediate Secondary School Certificate</div>
+                <div class="about-education-note">(HOPEFULLY GRADUATING 2026)</div>
+            </div>
+            </div>
+            <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
+            <div style="margin-bottom:1.2em;">
+            <b>OTHER INTERESTS:<b>
+            <ul>
+                <li>anime/manga</li>
+                <li>Legend of Zelda and Pokemon Franchise</li>
+                <li>music, singing and dancing</li>   
+                <li>movies, books, series</li>
+                <li>the moon and stars</li>
+                <li>cats</li>
+                <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
+            <div class="about-education-block">
+                <div class="about-language-title">LANGUAGE</div>
+                <div class="about-language-main">I speak <a href="#" class="popup-title-link">english</a> and <a href="#" class="popup-title-link">german</a></div>
+                <div class="about-language-note">I prefer speaking in english even while im native german</div>
+            </div>
+            </div>
+            `;
+    } else if (type === 'links') {
+        popupContent.innerHTML = `
+            <div class="popup-links-grid">
+                <a href="https://x.com/xkaerii" target="_blank" class="popup-link-item">
+                    <img src="assets/twitter.svg" alt="twitter"><span>twitter</span>
+                </a>
+                <a href="https://www.youtube.com/@xkaeri" target="_blank" class="popup-link-item">
+                    <img src="assets/youtube.svg" alt="youtube"><span>youtube</span>
+                </a>
+                <a href="https://discord.gg/DQQDsA22" target="_blank" class="popup-link-item">
+                    <img src="assets/discord.svg" alt="discord"><span>discord</span>
+                </a>
+                <a href="https://www.instagram.com/kittypaw_nya/?next=%2F" target="_blank" class="popup-link-item">
+                    <img src="assets/instagram.svg" alt="instagram"><span>instagram</span>
+                </a>
+                <a href="https://github.com/xkaeri" target="_blank" class="popup-link-item">
+                    <img src="assets/github.svg" alt="instagram"><span>github</span>
+                </a>
+            </div>
+            <div class="popup-links-note">clicking any of the links will open a new tab!</div>
+        `;
+    } else if (type === 'work') {
+        popupContent.innerHTML = `
+            <div class="skills-section">
+                <div class="skills-highlight">
+                    <b>Accepting work offers via <a href="mailto:xkaeriiii@gmail.com" class="skills-link">my work email!</a></b><br>
+                    I do discord servers and moderating/managing your community. :)
+                </div>
+                <div class="skills-columns" style="margin-top:2em; display: flex; gap: 2.5rem; align-items: flex-start;">
+                    <div class="skills-col">
+                        <div class="skills-title">TOOLS</div>
+                        <div class="skills-list">
+                            <span class="skills-chip">VStudio Code</span>
+                        </div>
+                    </div>
+                    <div class="skills-col">
+                        <div class="skills-title">DEVELOPMENT</div>
+                        <div class="skills-list">
+                            <span class="skills-chip">HTML</span>
+                            <span class="skills-chip">CSS</span>
+                            <span class="skills-chip">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-title" style="margin-top:2em;">my work!</div>
+                <div class="skills-desc">Projects</div>
+                <div class="skills-gallery" id="work-gallery" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; align-items: center; margin-top: 1.5em;">
+                    <span class="skills-note" style="min-width:220px; text-align:center;">This Website</span>
+                    <span class="skills-note" style="min-width:220px; text-align:center;">My entry <a href="https://kuninaru.com/entry" target="_blank">page</a></span>
+                </div>
+                <div class="skills-section-title">what i do</div>
+                <div class="skills-list">
+                    <span class="skills-chip">Lorem ipsum dolor sit amet</span>
+                </div>
+                <div class="skills-note">Just send me an email, if you'd like to talk about what else I can do for you.</div>
+            </div>
+        `;
+    } else if (type === 'faq') {
+        popupContent.innerHTML = `
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">what are your pronouns and gender?<span class="faq-arrow" style="float:right;">▾</span></button>
+                    <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                        <ul style="margin:0; padding-left:1.2em;"><li>I am a trans girl going by any/all pronouns although prefer she/her</li></ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">from where are you?<span class="faq-arrow" style="float:right;">▾</span></button>
+                    <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                        <ul style="margin:0; padding-left:1.2em;"><li>I am from germany!</li></ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">what's your setup?<span class="faq-arrow" style="float:right;">▾</span></button>
+                    <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                        <ul style="margin:0; padding-left:1.2em;"><li>I use a razer huntsman mini, razer deathadder v2 wireless and a logitech g435 wireless headset</li></ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">who are your favorite hsr characters?<span class="faq-arrow" style="float:right;">▾</span></button>
+                    <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                        <ul style="margin:0; padding-left:1.2em;"><li>My favorite honkai star rail characters are: Cipher, Acheron, Castorice and Dan Heng Imbibitor Lunae</li></ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" style="background:#fff8e1; color:#222; border:none; width:100%; text-align:left; padding:1em 1.2em; font-family:inherit; font-size:1.1rem; font-weight:600; border-radius:6px 6px 0 0; box-shadow:none; outline:none; cursor:pointer;">From where is your name?<span class="faq-arrow" style="float:right;">▾</span></button>
+                    <div class="faq-answer" style="background:transparent !important; color:#222; padding:1.2em 1.5em; border-radius:0 0 6px 6px; border-top:1px solid #f5e6b8; font-size:1.05rem; margin-top:-2px;">
+                        <ul style="margin:0; padding-left:1.2em;"><li>my name and domain name is from this song <a href="https://www.youtube.com/watch?v=f6TytcA47rI&pp=ygUIa3VuaW5hcnU%3D">Kuninaru</a></li></ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    } else if (type === 'contact') {
+        popupContent.innerHTML = `
+            <div class="contact-cute">
+                <div class="contact-cute-title">yayy mail!</div>
+                <div class="contact-cute-desc">
+                    the easiest way to contact me is through email! i don't really check my social media dm's, so please direct questions to my email instead.</span>
+                </div>
+                <img src="assets/mail-chibi.png" alt="mail chibi" class="contact-cute-img">
+                <div class="contact-cute-email">
+                    email me at: <a href="mailto:xkaeriiii@gmail.com">xkaeriiii@gmail.com</a><br>
+                    or press the button below to open your mail app.
+                </div>
+                <a href="mailto:xkaeriiii@gmail.com" class="contact-cute-btn">send me an email!</a>
+            </div>
+        `;
+    }
+
+    // Adjust popup size based on type
+    if (type === 'friends') {
+        popup.style.width = '90vw';
+        popup.style.height = '70vh';
+        popup.style.minWidth = '320px';
+        popup.style.maxWidth = '98vw';
+        popup.style.minHeight = '200px';
+        popup.style.maxHeight = '90vh';
+    } else {
+        popup.style.width = '';
+        popup.style.height = '';
+        popup.style.minWidth = '';
+        popup.style.maxWidth = '';
+        popup.style.minHeight = '';
+        popup.style.maxHeight = '';
+    }
+}
+
+// Remove any code that sets popup.style.width/height during drag!
 // --- Nested Popout/Modal Logic ---
 // Create a nested modal element (only once)
 let nestedModal = document.getElementById('nested-modal');
