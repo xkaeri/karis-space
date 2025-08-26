@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <link rel="icon"type="image/png" href="/rules/img/Paw.png"/>
+    <link rel="stylesheet" href="/rules/style.css">
+    <!-- Add Font Awesome for GitHub icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <a href="index.html" class="topbar-logo">
+                <img src="/rules/img/icon.png" alt="Site Logo" class="topbar-logo-img" />
+            </a>
+        </div>
+        <div class="topbar-center"></div>
+        <div class="topbar-right">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search site..." />
+                <span class="search-shortcut">CTRL K</span>
+            </div>
+            <a href="https://github.com/xkaeri" class="github-link" target="_blank" title="My github profile">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+                <ul>
+                    <a href="/rules/rules.html" class="sidebar-link">Rules <span class="arrow">></span></a>
+                    <a href="/rules/mods.html" class="sidebar-link">Moderation Team <span class="arrow">></span></a>
+                </ul>
+        </div>
+        <div class="main-content">
+            <div class="rules-header">
+                <p>Rules</p>
+            </div>
+            <div class="rules">
+                <div class="rules-content">
+                    <div class="rules-title">
+                        <h1>Rules</h1>
+                    </div>
+                    <div class="rules-text">
+                        <p class="rule">
+                            1. Follow Discord's 
+                            <a href="https://discord.com/terms" class="rule-link" target="_blank">Terms of Service</a> 
+                            and 
+                            <a href="https://discord.com/guidelines" class="rule-link" target="_blank">Community Guidelines</a>
+                        </p>
+                    </div>
+                    <hr class="custom-hr">
+                    <div class="rules-alert">
+                        <span class="alert-icon">⚠️</span>
+                        This is a placeholder alert message.
+                    </div>
+                    <div id="rules-list"></div> <!-- Add this container -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link your script.js just before the closing body tag -->
+    <script src="/rules/script.js"></script>
+</body>
+</html>

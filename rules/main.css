@@ -1,0 +1,144 @@
+body {
+    background: radial-gradient(ellipse at center, #16202a 0%, #10151b 100%);
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+        
+.topbar {
+    width: 100vw;
+    height: 56px;
+    background: #181f26;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 1px solid #222b36;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.topbar-logo-img {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    margin-right: 8px;
+    display: block;
+    border-radius: 50%;      
+    background: none;        
+    box-shadow: none;        
+}
+
+.topbar-logo-text {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-left: 4px;
+    user-select: none;
+}
+
+.search-container {
+            display: flex;
+            align-items: center;
+}
+       
+.search-bar {
+    background: #232b33;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 16px;
+}
+        
+.github-link {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 12px;
+    text-decoration: none;
+}
+        
+.main-title {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+        
+.main-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 48px;
+    margin-top: 16px;
+}
+        
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+        
+.card {
+    background: #7fd3ff;
+    color: #0a2233;
+    border-radius: 12px;
+    padding: 32px 36px;
+    min-width: 320px;
+    max-width: 350px;
+    box-shadow: 0 2px 8px 0 #00000020;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+        
+.card:hover {
+    background: #aee6ff;
+    box-shadow: 0 4px 16px 0 #00000030;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+        
+.card-title i {
+    margin-right: 10px;
+}
+
+.card-desc {
+    font-size: 1.05rem;
+    color: #0a2233;
+}
+        
+.footer {
+    text-align: right;
+    color: #b0b8c1;
+    font-size: 0.95rem;
+    margin: 150px 40px 16px 0;
+}
+
+@media (max-width: 900px) {
+    .card-grid {
+    flex-direction: column;
+    align-items: center;
+    }
+}
