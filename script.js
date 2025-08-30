@@ -68,9 +68,9 @@ const popupData = {
         title: 'about me',
         content: `
         <div class="popup-profile">
-            <img src="assets/avatars/website-avatar.png" alt="avatar" class="popup-avatar">
+            <img src="assets/avatars/image.png" alt="avatar" class="popup-avatar">
             <div>
-                <div class="popup-title-main">Yuru <span style="font-size:1.2rem; color:#ffa726;"></span></div>
+                <div class="popup-title-main">Yuruna<span style="font-size:1.2rem; color:#ffa726;"></span></div>
                 <div class="popup-title-sub">Student and Teenager</div>
             </div>
         </div>
@@ -78,13 +78,15 @@ const popupData = {
         <div style="margin-bottom:1.2em;">
         Hi! I'm Yuruna, but you can call me Yuru. I...
         <ul>
-            <li>love honkai star rail!</a></li>
+            <li>love hsr and wuwa!</a></li>
             <li>do things</li>
             <li>am trying to learn how to code</li>
         </ul>
         <p><b>Curent Projects:</b>
         <ul>
         <li>This website</li>
+        <li>My entry page for <a href="https://kuninaru.com/entry" target="_blank">Kuninaru</a></li>
+        <li>My discord website for <a href="https://kuninaru.com/rules" target="_blank">Wren's World</a></li>
         </ul></p>
         interested in working with me? send me an email at <a href="mailto:hi@sharyap.com">xkaeriiii@gmail.com</a>! :)
         </div>
@@ -99,11 +101,11 @@ const popupData = {
         <div style="margin-bottom:1.2em;">
         <b>OTHER INTERESTS:<b>
         <ul>
+            <li>wuthering waves</li>
+            <li>honkai star rail</li>
             <li>anime/manga</li>
-            <li>Legend of Zelda and Pokemon Franchise</li>
             <li>music, singing and dancing</li>   
             <li>movies, books, series</li>
-            <li>the moon and stars</li>
             <li>cats</li>
             <div style="border-top:1px solid #eee; margin:1.2em 0;"></div>
         <div class="about-education-block">
@@ -240,8 +242,7 @@ const popupData = {
             <div class="friend-info">
                 <div class="friend-name">asuyi</div>
                 <div class="friend-role">My best friend</div><br>
-                <div class=friend-note>The person who has helped me through everything and has stayed by my side while others left me.
-                I think without her I would have already long fully left social media.</div><br>
+                <div class=friend-note>The person who helped me through alot and always makes me smile and laugh.</div><br>
             </div>
         </div>
         <div class="friend-item">
@@ -265,8 +266,7 @@ const popupData = {
             <div class="friend-info">
                 <div class="friend-name">Lemi</div>
                 <div class="friend-role">Close Friend</div><br>
-                <div class="friend-note">A person who is very funny, kind and awesome. She is a great person and also a great artist, 
-                I really like her as a person and will always hold her in high regards.</div>
+                <div class="friend-note">A person who is very funny, kind and awesome. She is a great person and also a great artist</div>
             </div>
         </div>
                 <div class="friend-item">
