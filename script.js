@@ -233,8 +233,8 @@ const popupData = {
         `
     },
     // Add your friends here!
-    friends: {
-    title: 'friends',
+    "my loves": {
+    title: 'my loves',
     content: `
     <div class="friends-list">
         <div class="friend-item">
@@ -296,6 +296,25 @@ navLinks.forEach(link => {
             popupContent.innerHTML = popupData[key].content;
             popup.style.display = 'flex';
             if (key === 'faq') setupFAQAccordion();
+
+            // --- Make friends popup a constant size ---
+            if (key === 'my loves' || key === 'friends') {
+                popup.style.width = '700px';
+                popup.style.height = '500px';
+                popup.style.minWidth = '700px';
+                popup.style.maxWidth = '700px';
+                popup.style.minHeight = '500px';
+                popup.style.maxHeight = '500px';
+                popup.style.resize = 'none';
+            } else {
+                popup.style.width = '';
+                popup.style.height = '';
+                popup.style.minWidth = '';
+                popup.style.maxWidth = '';
+                popup.style.minHeight = '';
+                popup.style.maxHeight = '';
+                popup.style.resize = '';
+            }
         }
     });
 });
@@ -355,11 +374,8 @@ header.addEventListener('mousedown', (e) => {
     dragOffsetX = e.clientX - rect.left;
     dragOffsetY = e.clientY - rect.top;
     document.body.style.userSelect = 'none';
-    // Only fix width/height for friends popup to prevent auto-resize
-    if (popupTitle.textContent.trim().toLowerCase() === 'friends') {
-        popup.style.width = rect.width + 'px';
-        popup.style.height = rect.height + 'px';
-    }
+    // --- Remove code that sets popup.style.width/height during drag ---
+    // No resizing for friends popup, keep size constant
 });
 document.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
