@@ -997,7 +997,39 @@ body.dark .copyright-below {
     font-weight: 400;
     letter-spacing: 0.01em;
 }
-
+.gacha-list {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+.gacha-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #ffe082;
+    border-radius: 10px;
+    padding: 1em;
+    background: #fffbe9;
+    transition: box-shadow 0.2s;
+}
+.gacha-game:hover {
+    box-shadow: 0 2px 12px #ffe08288;
+}
+.gacha-game img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0.5em;
+}
+.gacha-builds {
+    background: #fffde7;
+    border-radius: 8px;
+    padding: 1em;
+    min-height: 80px;
+    margin-top: 1em;
+}
 @media (max-width: 600px) {
     .card {
         min-width: 90vw;

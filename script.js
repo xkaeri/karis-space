@@ -283,7 +283,33 @@ const popupData = {
     </div>
     `
 },
-
+    gacha: {
+        title: 'gacha games',
+        content: `
+        <div class="gacha-section">
+            <div class="gacha-intro">
+                <b>Here are the gacha games I play!</b>
+                <p>I also share my builds and info for each game below. Click a game to see more!</p>
+            </div>
+            <div class="gacha-list">
+                <div class="gacha-game" data-game="hsr">
+                    <img src="assets/games/hsr.png" alt="Honkai Star Rail">
+                    <span>Honkai Star Rail</span>
+                </div>
+                <div class="gacha-game" data-game="wuwa">
+                    <img src="assets/games/wuwa.png" alt="Wuthering Waves">
+                    <span>Wuthering Waves</span>
+                </div>
+                <div class="gacha-game" data-game="genshin">
+                    <img src="assets/games/genshin.png" alt="Genshin Impact">
+                    <span>Genshin Impact</span>
+                </div>
+                <!-- Add more games as you like -->
+            </div>
+            <div id="gacha-builds" class="gacha-builds" style="margin-top:1.5em;"></div>
+        </div>
+        `
+    },
 };
 
 navLinks.forEach(link => {
@@ -778,6 +804,65 @@ navLinks.forEach(link => {
             popup.style.display = 'flex';
             if (key === 'faq') setupFAQAccordion();
             if (key === 'work') setupWorkGalleryModal();
+        }
+    });
+});
+
+// Gacha Games Section 
+function bindGachaGameClicks() {
+    const gachaGames = document.querySelectorAll('.gacha-game');
+    const buildsDiv = document.getElementById('gacha-builds');
+    if (!gachaGames.length || !buildsDiv) return;
+
+    // Example builds/info for each game
+    const buildsData = {
+        hsr: `
+            <h3>Honkai Star Rail</h3>
+            <ul>
+                <li><b>Main:</b> Acheron (Lightning Nihility)</li>
+                <li><b>Build:</b> Crit DMG/ATK, Nihility Rope, Inert Salsotto</li>
+                <li><b>Other units:</b> Dan Heng IL, Kafka, Silver Wolf</li>
+            </ul>
+        `,
+        wuwa: `
+            <h3>Wuthering Waves</h3>
+            <ul>
+                <li><b>Main:</b> Jiyan</li>
+                <li><b>Build:</b> Crit Rate/ATK, Wind Set, Resonator 5</li>
+                <li><b>Other units:</b> Calcharo, Verina</li>
+            </ul>
+        `,
+        genshin: `
+            <h3>Genshin Impact</h3>
+            <ul>
+                <li><b>Main:</b> Raiden Shogun</li>
+                <li><b>Build:</b> Emblem 4pc, Crit Rate/ATK, Eng Recharge</li>
+                <li><b>Other units:</b> Nahida, Yelan, Xingqiu</li>
+            </ul>
+        `
+    };
+
+    gachaGames.forEach(game => {
+        game.addEventListener('click', () => {
+            const key = game.getAttribute('data-game');
+            buildsDiv.innerHTML = buildsData[key] || '<i>No info yet!</i>';
+        });
+    });
+}
+
+navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        playSound('sound-click');
+        const key = link.querySelector('span').textContent.trim().toLowerCase();
+        if (popupData[key]) {
+            popupTitle.textContent = popupData[key].title;
+            popupContent.innerHTML = popupData[key].content;
+            popup.style.display = 'flex';
+            if (key === 'faq') setupFAQAccordion();
+            if (key === 'gacha') {
+                setTimeout(bindGachaGameClicks, 50); // Wait for DOM update
+            }
         }
     });
 });
