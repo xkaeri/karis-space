@@ -1,14 +1,15 @@
 body {
-    background: #181f26;
+    background: #232323;
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
+    color: #fff;
 }
 
 h1 {
-    text-align: center;
+    text-align: right;
     color: white;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 0;
 }
 
@@ -54,87 +55,132 @@ h2 {
 
 .container {
     display: flex;
-    min-height: 100vh;
-    padding-top: 56px; 
-    box-sizing: border-box;
+    align-items: flex-start;
+    height: 100vh;
 }
 
 .sidebar {
     width: 300px;
-    background: #1b232c;
+    background: #232323;
     color: #cfd8dc;
-    padding: 32px 0 24px 0;
-    box-sizing: border-box;
-    font-size: 1rem;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 2px solid gray;
+    height: 100vh; 
+}
+
+.sidebar-title {
+    color: #b0bec5;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 36px 0 36px 36px;
+    letter-spacing: 1px;
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    font-size: 0.1rem;
 }
 
-.sidebar-link, .sidebar a.sidebar-link {
-    display: flex;
-    align-items: center;
-    padding: 12px 24px;
-    color: #5eb6f7;
+.sidebar-link {
+    display: block;
+    padding: 0 12px 9px 19px;
+    color: #cfd8dc;
     text-decoration: none;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.2s;
-    position: relative;
-    font-size: 1.1rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-align: left;
+    background: none;
+    border: none;
+    transition: color 0.2s;
 }
 
-.sidebar-link.active, .sidebar-link:hover, .sidebar a.sidebar-link:hover {
-    background: #223040;
-    color: #5eb6f7;
+.sidebar-link:last-child {
+    color: #a991ff;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.sidebar-link.active, .sidebar-link:hover {
+    color: #b0bec5;
+    background: none;
 }
 
 .arrow {
-    margin-left: auto;
+    float: right;
     font-size: 1.1em;
-    color: #5eb6f7;
+    color: #b0bec5;
 }
 
-
-.sidebar-submenu {
-    padding-left: 24px;
-    border-left: 1px solid #26313d;
-    margin: 0 0 8px 0;
+.rules-intro {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 32px;
+    max-width: 900px;
 }
 
-.sidebar-sublink {
-    display: block;
-    color: #cfd8dc;
-    text-decoration: none;
-    padding: 8px 0 8px 16px;
-    font-weight: 400;
-    font-size: 1em;
-    border-radius: 4px;
-    transition: background 0.2s, color 0.2s;
+.rules-intro b {
+    font-weight: bold;
 }
 
-.sidebar-sublink:hover {
-    background: #223040;
-    color: #5eb6f7;
+.rules-intro a {
+    color: #a991ff;
+    text-decoration: underline;
 }
 
-
-.sidebar-submenu li {
-    margin: 0;
-}
-
-.sidebar-group {
-    margin-bottom: 8px;
+.rules-intro hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin-top: 32px;
 }
 
 .main-content {
     flex: 1;
     padding: 48px 48px 0 48px;
+    margin-top: 0;
+    background: #232323;
+    min-height: 100vh;
+}
+
+.rules-title h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.rules-list {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-top: 32px;
+    margin-left: 0;
+    padding-left: 32px;
+    max-width: 900px;
+}
+
+.rules-list li {
+    margin-bottom: 32px;
+    line-height: 1.7;
+    color: gray;
+    font-size: 16px;
+}   
+
+.rules-list strong {
+    font-size: 16px;
+    color: #fff;
+}
+
+.rules-list div {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 8px;
 }
 
 .rules-header p {
@@ -148,8 +194,12 @@ h2 {
     color: white;
     font-weight: bold;
     font-size: 3rem;
-    margin-bottom: 24px;
-    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0.25em;
+    text-align: left;
+    letter-spacing: -0.015em;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .rules-text .rule {
@@ -184,7 +234,7 @@ h2 {
 }
 
 .rule-dropdown-arrow {
-    color: #fff; /* Makes the arrow white */
+    color: #fff; 
     margin-right: 12px;
     font-size: 1.2em;
     transition: transform 0.2s;
@@ -514,7 +564,7 @@ h2 {
         padding: 16px 0;
     }
 
-    .sidebar-link, .sidebar a.sidebar-link {
+    .sidebar-link {
         padding: 10px 16px;
         font-size: 1rem;
     }
